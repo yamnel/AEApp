@@ -10,6 +10,7 @@ import UIKit
 
 
 extension UINavigationController {
+    
     override open var shouldAutorotate: Bool {
         return false
     }
