@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iGa-Tr-5Qd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E183b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iGa-Tr-5Qd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -466,15 +466,15 @@
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEb-s1-GX1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEb-s1-GX1">
                                 <rect key="frame" x="16" y="299" width="343" height="69"/>
                                 <color key="backgroundColor" red="0.93582153320000006" green="0.1674751639" blue="0.186591059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Button">
+                                        <fragment content="Change Password">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" size="15" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -490,17 +490,18 @@
                         <color key="backgroundColor" red="1" green="0.82925707100000001" blue="0.0019002020130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fV3-J5-7jB" firstAttribute="top" secondItem="H8V-dB-y6T" secondAttribute="bottom" constant="83" id="22k-Jm-deu"/>
-                            <constraint firstItem="fV3-J5-7jB" firstAttribute="leading" secondItem="gEb-s1-GX1" secondAttribute="leading" id="5Vr-cY-rmC"/>
-                            <constraint firstItem="gEb-s1-GX1" firstAttribute="centerX" secondItem="P3F-By-kf8" secondAttribute="centerX" id="7nk-UR-fV0"/>
                             <constraint firstItem="1em-sn-S5A" firstAttribute="centerY" secondItem="P3F-By-kf8" secondAttribute="centerY" constant="-133.5" id="8ui-7P-AWj"/>
                             <constraint firstItem="fV3-J5-7jB" firstAttribute="centerX" secondItem="P3F-By-kf8" secondAttribute="centerX" id="GQo-th-GIt"/>
                             <constraint firstItem="H8V-dB-y6T" firstAttribute="leading" secondItem="P3F-By-kf8" secondAttribute="leading" id="Oxw-3I-2Y0"/>
                             <constraint firstItem="fV3-J5-7jB" firstAttribute="trailing" secondItem="1em-sn-S5A" secondAttribute="trailing" id="Q1r-YY-QBh"/>
                             <constraint firstItem="fV3-J5-7jB" firstAttribute="leading" secondItem="P3F-By-kf8" secondAttribute="leadingMargin" id="WvL-Ws-7mI"/>
                             <constraint firstItem="1em-sn-S5A" firstAttribute="top" secondItem="fV3-J5-7jB" secondAttribute="bottom" constant="8" symbolic="YES" id="YVL-iA-pha"/>
-                            <constraint firstItem="gEb-s1-GX1" firstAttribute="centerY" secondItem="P3F-By-kf8" secondAttribute="centerY" id="l4k-IY-953"/>
+                            <constraint firstItem="uFv-jq-m6u" firstAttribute="top" secondItem="gEb-s1-GX1" secondAttribute="bottom" constant="299" id="cHu-8o-f6f"/>
+                            <constraint firstItem="gEb-s1-GX1" firstAttribute="trailing" secondItem="1em-sn-S5A" secondAttribute="trailing" id="cwr-Wm-w7T"/>
+                            <constraint firstItem="gEb-s1-GX1" firstAttribute="centerY" secondItem="P3F-By-kf8" secondAttribute="centerY" id="eQk-8K-ibK"/>
                             <constraint firstItem="fV3-J5-7jB" firstAttribute="centerX" secondItem="H8V-dB-y6T" secondAttribute="centerX" id="mG4-iK-wpM"/>
                             <constraint firstItem="fV3-J5-7jB" firstAttribute="leading" secondItem="1em-sn-S5A" secondAttribute="leading" id="oFJ-Mm-cxp"/>
+                            <constraint firstItem="gEb-s1-GX1" firstAttribute="leading" secondItem="1em-sn-S5A" secondAttribute="leading" id="rcv-rY-I3Z"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -655,7 +656,7 @@
         <image name="big-phone-red-hi.png" width="600" height="556"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oqn-lO-6zu"/>
+        <segue reference="7rt-sk-pP5"/>
         <segue reference="8Su-Im-c85"/>
         <segue reference="YuO-Mn-p2C"/>
     </inferredMetricsTieBreakers>
