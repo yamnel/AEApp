@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E183b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iGa-Tr-5Qd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iGa-Tr-5Qd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -44,6 +44,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginButton:" destination="iGa-Tr-5Qd" eventType="touchUpInside" id="0Om-WF-ssT"/>
                                     <segue destination="sia-N8-gSK" kind="show" id="Oqn-lO-6zu"/>
                                 </connections>
                             </button>
@@ -63,6 +64,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="signupButton:" destination="iGa-Tr-5Qd" eventType="touchUpInside" id="kf5-b3-VaL"/>
                                     <segue destination="leW-hV-H2O" kind="show" id="YuO-Mn-p2C"/>
                                 </connections>
                             </button>
@@ -90,6 +92,10 @@
                             <constraint firstItem="DCK-fI-LIE" firstAttribute="top" secondItem="MAr-yU-txe" secondAttribute="bottom" constant="8" id="uLR-Au-IdE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="DCK-fI-LIE" id="Ga0-Ue-MaN"/>
+                        <outlet property="username" destination="MAr-yU-txe" id="qzZ-SX-HQK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIE-NB-Ufs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -553,7 +559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aF5-4n-u3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="795.6521739130435"/>
+            <point key="canvasLocation" x="2567" y="619"/>
         </scene>
         <!--View Invoices View Controller-->
         <scene sceneID="ku6-ww-uqL">
@@ -641,7 +647,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEn-HA-zud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="621"/>
+            <point key="canvasLocation" x="1796" y="738"/>
         </scene>
     </scenes>
     <resources>
@@ -649,7 +655,7 @@
         <image name="big-phone-red-hi.png" width="600" height="556"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g3c-kV-BRm"/>
+        <segue reference="Oqn-lO-6zu"/>
         <segue reference="8Su-Im-c85"/>
         <segue reference="YuO-Mn-p2C"/>
     </inferredMetricsTieBreakers>

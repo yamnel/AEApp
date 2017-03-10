@@ -19,6 +19,12 @@ extension UINavigationController {
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBAction func loginButton(_ sender: Any) {
+    }
+    @IBAction func signupButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
