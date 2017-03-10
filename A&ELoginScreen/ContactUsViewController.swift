@@ -7,16 +7,55 @@
 //
 
 import UIKit
+import MessageUI
 
-class ContactUsViewController: UIViewController {
+class ContactUsViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
-    let number = "9426273111"
+    let number = "9416273111"
+    var facebookLink = "facebook://profile/147188581990505"
+ 
 
     @IBAction func callUsButton(_ sender: UIButton) {
         
         guard let number = URL(string: "telprompt://" + number) else { return }
         UIApplication.shared.open(number, options: [:], completionHandler: nil)
     }
+    @IBAction func facebookButton(_ sender: UIButton) {
+        let facebookUrl = NSURL(string: facebookLink)
+        
+        if UIApplication.shared.canOpenURL(facebookUrl! as URL)
+        {
+            UIApplication.shared.openURL(facebookUrl! as URL)
+            
+        } else {
+            //redirect to safari because the user doesn't have Instagram
+            UIApplication.shared.openURL(NSURL(string: "https://www.facebook.com/aandeautorepair/")! as URL)
+        }
+        
+    }
+    @IBAction func mailButton(_ sender: UIButton) {
+        
+        if MFMailComposeViewController.canSendMail() {
+            
+            let mailer = MFMailComposeViewController()
+            mailer.mailComposeDelegate = self
+            mailer.setToRecipients(["aandeautorepair@yahoo.com"])
+            mailer.setMessageBody("<p>Please enter your message here</p>", isHTML: true)
+            
+            present(mailer, animated: true)
+        
+        } else {
+            print("Mail services are not available")
+            return
+        }
+        
+    
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
