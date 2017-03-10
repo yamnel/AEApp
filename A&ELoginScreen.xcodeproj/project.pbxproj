@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */; };
+		7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DAD71E73258000AAF7DE /* Attachment-4.png */; };
+		7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DAD91E73262A00AAF7DE /* mail-icon.png */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
 		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-app-icon.png"; sourceTree = "<group>"; };
+		7220DAD71E73258000AAF7DE /* Attachment-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attachment-4.png"; path = "../Attachment-4.png"; sourceTree = "<group>"; };
+		7220DAD91E73262A00AAF7DE /* mail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail-icon.png"; path = "../mail-icon.png"; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
@@ -80,9 +86,12 @@
 				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
 				F8DD994F1E4A564800DC3EB9 /* Main.storyboard */,
 				F8DD99521E4A564800DC3EB9 /* Assets.xcassets */,
-				72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */,
 				72FDE0C11E5C9CA900D888CF /* 2016 A&E Stroke Logo.png */,
+				7220DAD71E73258000AAF7DE /* Attachment-4.png */,
+				72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */,
+				7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */,
 				F8DD99571E4A564800DC3EB9 /* Info.plist */,
+				7220DAD91E73262A00AAF7DE /* mail-icon.png */,
 				F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */,
 			);
 			path = "A&ELoginScreen";
@@ -149,9 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */,
+				7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */,
 				72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */,
+				7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
 				72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */,
+				7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */,
 				F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
