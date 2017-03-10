@@ -21,8 +21,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
-        
-        
+    
         
     }
     

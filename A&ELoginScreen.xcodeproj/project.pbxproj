@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
+		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
+		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
 		72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FDE0C11E5C9CA900D888CF /* 2016 A&E Stroke Logo.png */; };
 		72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */; };
 		72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
+		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
 		72FDE0C11E5C9CA900D888CF /* 2016 A&E Stroke Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2016 A&E Stroke Logo.png"; path = "../2016 A&E Stroke Logo.png"; sourceTree = "<group>"; };
 		72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -67,8 +73,11 @@
 				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
 				72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */,
 				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
+				72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */,
+				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
 				F8DD994F1E4A564800DC3EB9 /* Main.storyboard */,
 				F8DD99521E4A564800DC3EB9 /* Assets.xcassets */,
+				72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */,
 				72FDE0C11E5C9CA900D888CF /* 2016 A&E Stroke Logo.png */,
 				F8DD99571E4A564800DC3EB9 /* Info.plist */,
 				F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */,
@@ -138,6 +147,7 @@
 				F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */,
 				72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
+				72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */,
 				F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +163,9 @@
 				72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */,
 				F8DD994E1E4A564800DC3EB9 /* ViewController.swift in Sources */,
 				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,
+				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
 				F8DD994C1E4A564800DC3EB9 /* AppDelegate.swift in Sources */,
+				72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
