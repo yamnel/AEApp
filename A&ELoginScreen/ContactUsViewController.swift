@@ -10,7 +10,7 @@ import UIKit
 
 class ContactUsViewController: UIViewController {
     
-    let number = "9426273111"
+    let number = "9416273111"
 
     @IBAction func callUsButton(_ sender: UIButton) {
         

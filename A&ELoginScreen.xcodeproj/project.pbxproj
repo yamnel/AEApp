@@ -120,6 +120,7 @@
 				TargetAttributes = {
 					F8DD99471E4A564800DC3EB9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 47S98234JZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -290,6 +291,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 47S98234JZ;
 				INFOPLIST_FILE = "A&ELoginScreen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamnel.A-ELoginScreen";
@@ -302,6 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 47S98234JZ;
 				INFOPLIST_FILE = "A&ELoginScreen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamnel.A-ELoginScreen";
