@@ -20,21 +20,33 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
         guard let number = URL(string: "telprompt://" + number) else { return }
         UIApplication.shared.open(number, options: [:], completionHandler: nil)
     }
+    
     @IBAction func facebookButton(_ sender: UIButton) {
-        let facebookUrl = NSURL(string: facebookLink)
+        let facebookUrl = URL(string: facebookLink)
+        
+        let options = [UIApplicationOpenURLOptionUniversalLinksOnly : true]
+        
         
         if UIApplication.shared.canOpenURL(facebookUrl! as URL)
         {
-            UIApplication.shared.openURL(facebookUrl! as URL)
+            UIApplication.shared.open(facebookUrl!, options: options, completionHandler: nil)
             
         } else {
-            //redirect to safari because the user doesn't have Instagram
-            UIApplication.shared.openURL(NSURL(string: "https://www.facebook.com/aandeautorepair/")! as URL)
+            //redirect to safari because the user doesn't have Facebook
+            UIApplication.shared.open(NSURL(string: "https://www.facebook.com/aandeautorepair/")! as URL)
         }
         
     }
+    
     @IBAction func mailButton(_ sender: UIButton) {
         
+        /*If the MailComposeViewController is able to send mail,
+         * A MFMailComposeViewController object is created and
+         * An email composition dialog pops up, with
+         * aandeautorepair@yahoo.com set as the recipient
+         * If the MailComposeViewController is able to send mail, an 
+         * error message is printed and the attempt closes
+         */
         if MFMailComposeViewController.canSendMail() {
             
             let mailer = MFMailComposeViewController()
@@ -48,8 +60,6 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
             print("Mail services are not available")
             return
         }
-        
-    
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
