@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
@@ -53,8 +55,12 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         self.view.endEditing(true)
     }
     
+    // Cancel Landscape Orientation 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+
 }
