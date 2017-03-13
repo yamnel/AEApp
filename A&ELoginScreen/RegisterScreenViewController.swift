@@ -12,6 +12,10 @@ import UIKit
 
 class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+   
+    @IBOutlet weak var registerScrollView: UIScrollView!
+    
+    
     
     @IBOutlet var pickerView: UIPickerView!
     
@@ -38,12 +42,30 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
         return pickerDataSource.count
     }
     
+    func adjustForKeyboard(notification: Notification) {
+        let userInfo = notification.userInfo!
+        
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
+        
+        if notification.name == Notification.Name.UIKeyboardWillHide {
+            registerScrollView.contentInset = UIEdgeInsets.zero
+        } else {
+            registerScrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
+        }
+        
+        registerScrollView.scrollIndicatorInsets = registerScrollView.contentInset
+        
+    }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillHide, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
 
         // Do any additional setup after loading the view.
     }
