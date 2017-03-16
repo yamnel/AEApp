@@ -20,8 +20,10 @@
 		72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */; };
 		72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */; };
 		F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */; };
+		F87E8AE41E7B0433008554FA /* A&ELoginScreen.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */; };
+		F87E8AE61E7B0443008554FA /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = F87E8AE51E7B0443008554FA /* Pods */; };
 		F8DD994C1E4A564800DC3EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */; };
-		F8DD994E1E4A564800DC3EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DD994D1E4A564800DC3EB9 /* ViewController.swift */; };
+		F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DD994D1E4A564800DC3EB9 /* LoginController.swift */; };
 		F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DD994F1E4A564800DC3EB9 /* Main.storyboard */; };
 		F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DD99521E4A564800DC3EB9 /* Assets.xcassets */; };
 		F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */; };
@@ -43,9 +45,11 @@
 		72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		EB280F5E1CC837D7E0C4A1BA /* Pods_A_ELoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_ELoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPageController.swift; sourceTree = "<group>"; };
+		F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "A&ELoginScreen.xcworkspace"; sourceTree = "<group>"; };
+		F87E8AE51E7B0443008554FA /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		F8DD99481E4A564800DC3EB9 /* A&ELoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A&ELoginScreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8DD994D1E4A564800DC3EB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8DD994D1E4A564800DC3EB9 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F8DD99501E4A564800DC3EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8DD99521E4A564800DC3EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8DD99551E4A564800DC3EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		F8DD993F1E4A564800DC3EB9 = {
 			isa = PBXGroup;
 			children = (
+				F87E8AE51E7B0443008554FA /* Pods */,
+				F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */,
 				F8DD994A1E4A564800DC3EB9 /* A&ELoginScreen */,
 				F8DD99491E4A564800DC3EB9 /* Products */,
 				16D652E67BB5061BDF3CCC07 /* Pods */,
@@ -103,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */,
-				F8DD994D1E4A564800DC3EB9 /* ViewController.swift */,
+				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
 				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
 				F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */,
 				72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */,
@@ -159,7 +165,7 @@
 				TargetAttributes = {
 					F8DD99471E4A564800DC3EB9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 47S98234JZ;
+						DevelopmentTeam = BJ9DZXE74F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -189,11 +195,13 @@
 			files = (
 				F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */,
 				7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */,
+				F87E8AE61E7B0443008554FA /* Pods in Resources */,
 				725C8F431E79EE050011F4C8 /* GoogleService-Info.plist in Resources */,
 				72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */,
 				7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
 				72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */,
+				F87E8AE41E7B0433008554FA /* A&ELoginScreen.xcworkspace in Resources */,
 				7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */,
 				F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +264,7 @@
 			files = (
 				72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */,
 				72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */,
-				F8DD994E1E4A564800DC3EB9 /* ViewController.swift in Sources */,
+				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
 				F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */,
 				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,
 				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
@@ -384,7 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 47S98234JZ;
+				DEVELOPMENT_TEAM = BJ9DZXE74F;
 				INFOPLIST_FILE = "A&ELoginScreen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamnel.A-ELoginScreen";
@@ -399,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 47S98234JZ;
+				DEVELOPMENT_TEAM = BJ9DZXE74F;
 				INFOPLIST_FILE = "A&ELoginScreen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamnel.A-ELoginScreen";
