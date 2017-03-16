@@ -84,7 +84,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        readName()
         // Do any additional setup after loading the view.
     }
 
