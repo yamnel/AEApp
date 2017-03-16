@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>303944774983-2q91rhjki9sfqcgre2snklm3u8kubiai.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.303944774983-2q91rhjki9sfqcgre2snklm3u8kubiai</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5le7aQvNwIg2htcOk3rdMDYYwaHViE24</string>
+	<key>GCM_SENDER_ID</key>
+	<string>303944774983</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yamnel.A-ELoginScreen</string>
+	<key>PROJECT_ID</key>
+	<string>aandeauto-8cc36</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aandeauto-8cc36.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:303944774983:ios:75f6144aaf84ecdc</string>
+	<key>DATABASE_URL</key>
+	<string>https://aandeauto-8cc36.firebaseio.com</string>
+</dict>
+</plist>

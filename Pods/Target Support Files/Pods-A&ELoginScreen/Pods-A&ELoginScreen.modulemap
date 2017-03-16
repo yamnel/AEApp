@@ -1,0 +1,6 @@
+framework module Pods_A_ELoginScreen {
+  umbrella header "Pods-A&ELoginScreen-umbrella.h"
+
+  export *
+  module * { export * }
+}

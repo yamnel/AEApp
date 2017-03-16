@@ -8,8 +8,14 @@
 
 import UIKit
 import SafariServices
+import Firebase
+import FirebaseAuth
 
 class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
+    
+    
+    
+    let ref  : FIRDatabaseReference! = FIRDatabase.database().reference()
     
     // The following delegate method ensures that the View Controller conforms to
     // SFSafariViewDelagate interface
@@ -18,6 +24,49 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         controller.dismiss(animated: true, completion: nil)
     }
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    func readName(){
+        
+        let userID = FIRAuth.auth()?.currentUser?.uid
+        
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            
+            let value = snapshot.value as? NSDictionary
+            
+            let firstName = value?["firstName"] as? String ?? ""
+            
+            let lastName = value?["lastName"] as? String ?? ""
+            
+            self.nameLabel.text = firstName + " " + lastName + "'s"
+
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    
+    @IBAction func logOutButton(_ sender: Any) {
+        
+        logOutHandler()
+    }
+    
+    func logOutHandler(){
+        
+        do{
+            
+            try FIRAuth.auth()?.signOut()
+            
+        } catch let logoutError{
+            
+                print(logoutError)
+        }
+        
+        self.performSegue(withIdentifier: "logoutSegue", sender: self)
+        
+    }
     
     // Opens a SFSafariViewController object when the Current Deals Button is pressed
     @IBAction func openDealsUrl(_ sender: Any) {
@@ -34,6 +83,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
