@@ -21,6 +21,12 @@
 		726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A74591E7DD68100F06C16 /* ACRepairViewController.swift */; };
 		726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */; };
 		726A74621E7DE28500F06C16 /* BG Products.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74611E7DE28500F06C16 /* BG Products.png */; };
+		726A74641E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74631E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png */; };
+		726A746A1E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74651E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png */; };
+		726A746B1E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74661E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png */; };
+		726A746C1E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74671E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png */; };
+		726A746D1E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74681E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png */; };
+		726A746E1E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74691E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
 		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
@@ -54,6 +60,12 @@
 		726A74591E7DD68100F06C16 /* ACRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRepairViewController.swift; sourceTree = "<group>"; };
 		726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGFluidsViewController.swift; sourceTree = "<group>"; };
 		726A74611E7DE28500F06C16 /* BG Products.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG Products.png"; sourceTree = "<group>"; };
+		726A74631E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BrakesSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
+		726A74651E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CoolingSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
+		726A74661E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrivelineSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
+		726A74671E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FuelSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
+		726A74681E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SteeringSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
+		726A74691E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TransSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
@@ -115,6 +127,12 @@
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				726A74651E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png */,
+				726A74661E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png */,
+				726A74671E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png */,
+				726A74681E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png */,
+				726A74691E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png */,
+				726A74631E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png */,
 				72463EA91E7DD1D500F355A9 /* AC Repair.jpg */,
 				72463E9F1E7DCFDB00F355A9 /* AC Icon Update.png */,
 				726A74611E7DE28500F06C16 /* BG Products.png */,
@@ -244,12 +262,18 @@
 				72463EA51E7DCFDB00F355A9 /* Tires Icon Update.png in Resources */,
 				7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */,
 				F87E8AE61E7B0443008554FA /* Pods in Resources */,
+				726A746E1E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png in Resources */,
 				725C8F431E79EE050011F4C8 /* GoogleService-Info.plist in Resources */,
 				72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */,
 				7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */,
+				726A74641E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png in Resources */,
+				726A746D1E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png in Resources */,
+				726A746B1E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png in Resources */,
 				72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
 				72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */,
+				726A746C1E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png in Resources */,
+				726A746A1E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png in Resources */,
 				F87E8AE41E7B0433008554FA /* A&ELoginScreen.xcworkspace in Resources */,
 				7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */,
 				F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */,
