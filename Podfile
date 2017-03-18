@@ -6,8 +6,10 @@ target 'A&ELoginScreen' do
   use_frameworks!
 
   # Pods for A&ELoginScreen
-pod 'Firebase/Core’
-pod 'Firebase/Database’
+	pod 'Firebase/Core'
+pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod ‘Firebase/Messaging'
 
 end
+
