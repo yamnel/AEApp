@@ -856,10 +856,10 @@
             </objects>
             <point key="canvasLocation" x="2040.8" y="-751.57421289355329"/>
         </scene>
-        <!--Wheel Alignment View Controller-->
+        <!--Repair View Controller-->
         <scene sceneID="cRs-Sq-N7o">
             <objects>
-                <viewController id="vyo-1Y-s2c" customClass="WheelAlignmentViewController" customModule="A_ELoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vyo-1Y-s2c" customClass="ACRepairViewController" customModule="A_ELoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aCI-ha-wnD"/>
                         <viewControllerLayoutGuide type="bottom" id="6wo-bp-mqe"/>
