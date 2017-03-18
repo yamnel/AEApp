@@ -16,9 +16,9 @@
 		72463EA41E7DCFDB00F355A9 /* Diagnostics Icon Update.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA01E7DCFDB00F355A9 /* Diagnostics Icon Update.png */; };
 		72463EA51E7DCFDB00F355A9 /* Tires Icon Update.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA11E7DCFDB00F355A9 /* Tires Icon Update.png */; };
 		72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA21E7DCFDB00F355A9 /* Wheel Alignment.png */; };
-		72463EA81E7DD16B00F355A9 /* WheelAlignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72463EA71E7DD16B00F355A9 /* WheelAlignmentViewController.swift */; };
 		72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA91E7DD1D500F355A9 /* AC Repair.jpg */; };
 		725C8F431E79EE050011F4C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 725C8F421E79EE050011F4C8 /* GoogleService-Info.plist */; };
+		726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A74591E7DD68100F06C16 /* ACRepairViewController.swift */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
 		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
@@ -47,9 +47,9 @@
 		72463EA01E7DCFDB00F355A9 /* Diagnostics Icon Update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Diagnostics Icon Update.png"; sourceTree = "<group>"; };
 		72463EA11E7DCFDB00F355A9 /* Tires Icon Update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tires Icon Update.png"; sourceTree = "<group>"; };
 		72463EA21E7DCFDB00F355A9 /* Wheel Alignment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wheel Alignment.png"; sourceTree = "<group>"; };
-		72463EA71E7DD16B00F355A9 /* WheelAlignmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelAlignmentViewController.swift; sourceTree = "<group>"; };
 		72463EA91E7DD1D500F355A9 /* AC Repair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AC Repair.jpg"; sourceTree = "<group>"; };
 		725C8F421E79EE050011F4C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		726A74591E7DD68100F06C16 /* ACRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRepairViewController.swift; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
@@ -147,6 +147,7 @@
 		F8DD994A1E4A564800DC3EB9 /* A&ELoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				726A74591E7DD68100F06C16 /* ACRepairViewController.swift */,
 				F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */,
 				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
 				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
@@ -162,7 +163,6 @@
 				72463E9E1E7DC89A00F355A9 /* Images */,
 				F8DD99571E4A564800DC3EB9 /* Info.plist */,
 				F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */,
-				72463EA71E7DD16B00F355A9 /* WheelAlignmentViewController.swift */,
 			);
 			path = "A&ELoginScreen";
 			sourceTree = "<group>";
@@ -304,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72463EA81E7DD16B00F355A9 /* WheelAlignmentViewController.swift in Sources */,
 				72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */,
 				72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */,
 				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
@@ -314,6 +313,7 @@
 				72463E901E7DC34F00F355A9 /* ServicesViewController.swift in Sources */,
 				F8DD994C1E4A564800DC3EB9 /* AppDelegate.swift in Sources */,
 				72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */,
+				726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
