@@ -39,7 +39,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
             
             let lastName = value?["lastName"] as? String ?? ""
             
-            self.nameLabel.text = firstName + " " + lastName + "'s"
+            self.nameLabel.text = firstName + " " + lastName
 
         }) { (error) in
             print(error.localizedDescription)
@@ -84,7 +84,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        readName()
         // Do any additional setup after loading the view.
     }
 
