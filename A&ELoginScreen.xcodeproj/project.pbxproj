@@ -19,6 +19,8 @@
 		72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA91E7DD1D500F355A9 /* AC Repair.jpg */; };
 		725C8F431E79EE050011F4C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 725C8F421E79EE050011F4C8 /* GoogleService-Info.plist */; };
 		726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A74591E7DD68100F06C16 /* ACRepairViewController.swift */; };
+		726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */; };
+		726A74621E7DE28500F06C16 /* BG Products.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74611E7DE28500F06C16 /* BG Products.png */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
 		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
@@ -50,6 +52,8 @@
 		72463EA91E7DD1D500F355A9 /* AC Repair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AC Repair.jpg"; sourceTree = "<group>"; };
 		725C8F421E79EE050011F4C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		726A74591E7DD68100F06C16 /* ACRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRepairViewController.swift; sourceTree = "<group>"; };
+		726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGFluidsViewController.swift; sourceTree = "<group>"; };
+		726A74611E7DE28500F06C16 /* BG Products.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG Products.png"; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			children = (
 				72463EA91E7DD1D500F355A9 /* AC Repair.jpg */,
 				72463E9F1E7DCFDB00F355A9 /* AC Icon Update.png */,
+				726A74611E7DE28500F06C16 /* BG Products.png */,
 				72463EA01E7DCFDB00F355A9 /* Diagnostics Icon Update.png */,
 				72463EA11E7DCFDB00F355A9 /* Tires Icon Update.png */,
 				72463EA21E7DCFDB00F355A9 /* Wheel Alignment.png */,
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				726A74591E7DD68100F06C16 /* ACRepairViewController.swift */,
+				726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */,
 				F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */,
 				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
 				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
@@ -231,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */,
+				726A74621E7DE28500F06C16 /* BG Products.png in Resources */,
 				72463EA41E7DCFDB00F355A9 /* Diagnostics Icon Update.png in Resources */,
 				72463EA31E7DCFDB00F355A9 /* AC Icon Update.png in Resources */,
 				72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */,
@@ -309,6 +316,7 @@
 				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
 				F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */,
 				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,
+				726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */,
 				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
 				72463E901E7DC34F00F355A9 /* ServicesViewController.swift in Sources */,
 				F8DD994C1E4A564800DC3EB9 /* AppDelegate.swift in Sources */,
