@@ -71,6 +71,7 @@
 		16D652E67BB5061BDF3CCC07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F87E8AE51E7B0443008554FA /* Pods */,
 				0AC46BF94E36CB9A0B3F721C /* Pods-A&ELoginScreen.debug.xcconfig */,
 				3B4E35B56A2FE9FC72F7F72C /* Pods-A&ELoginScreen.release.xcconfig */,
 			);
@@ -88,7 +89,6 @@
 		F8DD993F1E4A564800DC3EB9 = {
 			isa = PBXGroup;
 			children = (
-				F87E8AE51E7B0443008554FA /* Pods */,
 				F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */,
 				F8DD994A1E4A564800DC3EB9 /* A&ELoginScreen */,
 				F8DD99491E4A564800DC3EB9 /* Products */,
