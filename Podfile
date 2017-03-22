@@ -10,6 +10,8 @@ target 'A&ELoginScreen' do
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod ‘Firebase/Messaging'
+pod 'GoogleSignIn'
+pod 'pop', '~> 1.0'
 
 end
 

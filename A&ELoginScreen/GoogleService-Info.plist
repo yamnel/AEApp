@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>303944774983-2q91rhjki9sfqcgre2snklm3u8kubiai.apps.googleusercontent.com</string>
+	<string>712203355514-mucb07dr2bhv3h6pts010ar40vmpb0pa.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.303944774983-2q91rhjki9sfqcgre2snklm3u8kubiai</string>
+	<string>com.googleusercontent.apps.712203355514-mucb07dr2bhv3h6pts010ar40vmpb0pa</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC5le7aQvNwIg2htcOk3rdMDYYwaHViE24</string>
+	<string>AIzaSyCvfg-10Vp-DU2qWdN2XnjsZbG0dUeOhHM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>303944774983</string>
+	<string>712203355514</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.yamnel.A-ELoginScreen</string>
+	<string>com.aandeautorepair.AEApp</string>
 	<key>PROJECT_ID</key>
-	<string>aandeauto-8cc36</string>
+	<string>aeapp-69a84</string>
 	<key>STORAGE_BUCKET</key>
-	<string>aandeauto-8cc36.appspot.com</string>
+	<string>aeapp-69a84.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:303944774983:ios:75f6144aaf84ecdc</string>
+	<string>1:712203355514:ios:3ff3ca44c7dd1b52</string>
 	<key>DATABASE_URL</key>
-	<string>https://aandeauto-8cc36.firebaseio.com</string>
+	<string>https://aeapp-69a84.firebaseio.com</string>
 </dict>
 </plist>

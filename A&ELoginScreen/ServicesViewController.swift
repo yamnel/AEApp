@@ -10,6 +10,10 @@ import UIKit
 
 class ServicesViewController: UIViewController {
 
+    @IBAction func waA(_ sender: Any) {
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
