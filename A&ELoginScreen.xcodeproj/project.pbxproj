@@ -19,6 +19,9 @@
 		72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA21E7DCFDB00F355A9 /* Wheel Alignment.png */; };
 		72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA91E7DD1D500F355A9 /* AC Repair.jpg */; };
 		72491D4A1E845746007A5988 /* FuelServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72491D491E845746007A5988 /* FuelServiceViewController.swift */; };
+		726215191E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726215171E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg */; };
+		7262151A1E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726215181E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg */; };
+		7262151C1E86F08300BF3E4C /* BGBrakeFluidService2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7262151B1E86F08300BF3E4C /* BGBrakeFluidService2.jpg */; };
 		726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A74591E7DD68100F06C16 /* ACRepairViewController.swift */; };
 		726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */; };
 		726A74621E7DE28500F06C16 /* BG Products.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74611E7DE28500F06C16 /* BG Products.png */; };
@@ -29,8 +32,6 @@
 		726A746D1E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74681E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png */; };
 		726A746E1E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74691E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png */; };
 		726A74701E7DF30E00F06C16 /* BGBrakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */; };
-		729C0B9F1E8185890043FBA5 /* BG-Cooling-System-Service21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729C0B9D1E8185890043FBA5 /* BG-Cooling-System-Service21.jpg */; };
-		729C0BA01E8185890043FBA5 /* BGBrakeFluidService2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729C0B9E1E8185890043FBA5 /* BGBrakeFluidService2.jpg */; };
 		72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */; };
 		72D4291B1E7F9F8700EDFA59 /* BGDrivelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
@@ -65,6 +66,9 @@
 		72463EA91E7DD1D500F355A9 /* AC Repair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AC Repair.jpg"; sourceTree = "<group>"; };
 		72491D491E845746007A5988 /* FuelServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelServiceViewController.swift; sourceTree = "<group>"; };
 		72512B581E7F78300036902B /* MobilePlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobilePlayer.framework; path = "../../Library/Developer/Xcode/DerivedData/A&ELoginScreen-aagjzrkchjclhqgkpcpnoslxuniw/Build/Products/Debug-iphonesimulator/MobilePlayer/MobilePlayer.framework"; sourceTree = "<group>"; };
+		726215171E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BG-Cooling-System-Service21.jpg"; sourceTree = "<group>"; };
+		726215181E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-logo-clean-white-oval-copy-1024x616.jpg"; sourceTree = "<group>"; };
+		7262151B1E86F08300BF3E4C /* BGBrakeFluidService2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGBrakeFluidService2.jpg; sourceTree = "<group>"; };
 		726A74591E7DD68100F06C16 /* ACRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRepairViewController.swift; sourceTree = "<group>"; };
 		726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGFluidsViewController.swift; sourceTree = "<group>"; };
 		726A74611E7DE28500F06C16 /* BG Products.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG Products.png"; sourceTree = "<group>"; };
@@ -75,8 +79,6 @@
 		726A74681E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SteeringSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
 		726A74691E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TransSvc-Icon150-150x150.png"; sourceTree = "<group>"; };
 		726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBrakeViewController.swift; sourceTree = "<group>"; };
-		729C0B9D1E8185890043FBA5 /* BG-Cooling-System-Service21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "BG-Cooling-System-Service21.jpg"; path = "../../../Desktop/Services Icons/BG-Cooling-System-Service21.jpg"; sourceTree = "<group>"; };
-		729C0B9E1E8185890043FBA5 /* BGBrakeFluidService2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BGBrakeFluidService2.jpg; path = "../../../Desktop/Services Icons/BGBrakeFluidService2.jpg"; sourceTree = "<group>"; };
 		72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGCoolingViewController.swift; sourceTree = "<group>"; };
 		72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGDrivelineViewController.swift; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -133,8 +135,9 @@
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				729C0B9D1E8185890043FBA5 /* BG-Cooling-System-Service21.jpg */,
-				729C0B9E1E8185890043FBA5 /* BGBrakeFluidService2.jpg */,
+				7262151B1E86F08300BF3E4C /* BGBrakeFluidService2.jpg */,
+				726215171E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg */,
+				726215181E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg */,
 				726A74651E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png */,
 				726A74661E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png */,
 				726A74671E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png */,
@@ -274,14 +277,15 @@
 				72463EA51E7DCFDB00F355A9 /* Tires Icon Update.png in Resources */,
 				7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */,
 				F87E8AE61E7B0443008554FA /* Pods in Resources */,
+				7262151C1E86F08300BF3E4C /* BGBrakeFluidService2.jpg in Resources */,
 				726A746E1E7DE44A00F06C16 /* TransSvc-Icon150-150x150.png in Resources */,
-				729C0B9F1E8185890043FBA5 /* BG-Cooling-System-Service21.jpg in Resources */,
 				723735911E8193EF00F4ADE8 /* GoogleService-Info.plist in Resources */,
+				726215191E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg in Resources */,
 				72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */,
 				7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */,
 				726A74641E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png in Resources */,
-				729C0BA01E8185890043FBA5 /* BGBrakeFluidService2.jpg in Resources */,
 				726A746D1E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png in Resources */,
+				7262151A1E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg in Resources */,
 				726A746B1E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png in Resources */,
 				72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
