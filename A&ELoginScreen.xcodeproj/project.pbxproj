@@ -18,6 +18,7 @@
 		72463EA51E7DCFDB00F355A9 /* Tires Icon Update.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA11E7DCFDB00F355A9 /* Tires Icon Update.png */; };
 		72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA21E7DCFDB00F355A9 /* Wheel Alignment.png */; };
 		72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72463EA91E7DD1D500F355A9 /* AC Repair.jpg */; };
+		72491D4A1E845746007A5988 /* FuelServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72491D491E845746007A5988 /* FuelServiceViewController.swift */; };
 		726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A74591E7DD68100F06C16 /* ACRepairViewController.swift */; };
 		726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */; };
 		726A74621E7DE28500F06C16 /* BG Products.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74611E7DE28500F06C16 /* BG Products.png */; };
@@ -62,6 +63,7 @@
 		72463EA11E7DCFDB00F355A9 /* Tires Icon Update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tires Icon Update.png"; sourceTree = "<group>"; };
 		72463EA21E7DCFDB00F355A9 /* Wheel Alignment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wheel Alignment.png"; sourceTree = "<group>"; };
 		72463EA91E7DD1D500F355A9 /* AC Repair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AC Repair.jpg"; sourceTree = "<group>"; };
+		72491D491E845746007A5988 /* FuelServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelServiceViewController.swift; sourceTree = "<group>"; };
 		72512B581E7F78300036902B /* MobilePlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobilePlayer.framework; path = "../../Library/Developer/Xcode/DerivedData/A&ELoginScreen-aagjzrkchjclhqgkpcpnoslxuniw/Build/Products/Debug-iphonesimulator/MobilePlayer/MobilePlayer.framework"; sourceTree = "<group>"; };
 		726A74591E7DD68100F06C16 /* ACRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRepairViewController.swift; sourceTree = "<group>"; };
 		726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGFluidsViewController.swift; sourceTree = "<group>"; };
@@ -176,19 +178,20 @@
 		F8DD994A1E4A564800DC3EB9 /* A&ELoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */,
 				726A74591E7DD68100F06C16 /* ACRepairViewController.swift */,
 				726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */,
 				726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */,
 				72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */,
 				72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */,
-				F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */,
-				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
-				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
-				F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */,
-				72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */,
-				72463E8F1E7DC34F00F355A9 /* ServicesViewController.swift */,
-				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
 				72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */,
+				72491D491E845746007A5988 /* FuelServiceViewController.swift */,
+				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
+				72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */,
+				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
+				72463E8F1E7DC34F00F355A9 /* ServicesViewController.swift */,
+				F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */,
+				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
 				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
 				F8DD994F1E4A564800DC3EB9 /* Main.storyboard */,
 				F8DD99521E4A564800DC3EB9 /* Assets.xcassets */,
@@ -349,6 +352,7 @@
 				72D4291B1E7F9F8700EDFA59 /* BGDrivelineViewController.swift in Sources */,
 				72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */,
 				72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */,
+				72491D4A1E845746007A5988 /* FuelServiceViewController.swift in Sources */,
 				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
 				F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */,
 				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,

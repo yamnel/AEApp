@@ -1309,7 +1309,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9I-pF-ZEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5559" y="-874"/>
+            <point key="canvasLocation" x="4788" y="-215"/>
+        </scene>
+        <!--Fuel Service View Controller-->
+        <scene sceneID="ld6-ca-i1S">
+            <objects>
+                <viewController id="BMO-xh-EHN" customClass="FuelServiceViewController" customModule="A_ELoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEp-6k-vM2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8J0-mn-2Gy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nx2-94-MH1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="raQ-cr-Cr3">
+                                <rect key="frame" x="21" y="253" width="334" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Deposits accumulate on intake valves, injectors, ports, fuel injectors and combustion chambers causing loss of power, rough idle, hesitation, misfire, pinging, knocking, mileage and hard starting.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="The Problem:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fhu-Tb-1jV">
+                                <rect key="frame" x="16" y="223" width="127" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Every 15,000 miles" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MMu-PU-rVv">
+                                <rect key="frame" x="16" y="88" width="343" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Service Interval:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A58-7Z-HUZ">
+                                <rect key="frame" x="16" y="64" width="343" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQC-e1-Wpt">
+                                <rect key="frame" x="16" y="548" width="343" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnM-wp-7wC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="BG Fuel System Service" id="sig-Pp-fUG">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="qQD-nI-Qbh"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG-Cooling-System-Service21.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-kU-89n">
+                                <rect key="frame" x="142" y="124" width="228" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bgx-y0-0jZ">
+                                <rect key="frame" x="22" y="393" width="342" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="The Solution:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y9H-k6-sfW">
+                                <rect key="frame" x="21" y="364" width="127" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptA-Qd-fN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5808" y="-71"/>
         </scene>
         <!--Cooling View Controller-->
         <scene sceneID="Hgq-0e-WQj">
@@ -1398,7 +1479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbL-5P-jq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4788" y="380.5097451274363"/>
+            <point key="canvasLocation" x="5625" y="-887"/>
         </scene>
         <!--Repair View Controller-->
         <scene sceneID="cRs-Sq-N7o">
@@ -1558,10 +1639,10 @@ Replacing old refrigerant has another benefit: refrigerant tends to gather moist
         <image name="mail-icon.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="zeY-Hl-QjY"/>
+        <segue reference="HuK-DS-ICe"/>
         <segue reference="qe5-bK-uiQ"/>
         <segue reference="dPU-ud-hEn"/>
-        <segue reference="v3O-gc-Cj7"/>
-        <segue reference="HuK-DS-ICe"/>
-        <segue reference="zeY-Hl-QjY"/>
+        <segue reference="957-Sp-BQy"/>
     </inferredMetricsTieBreakers>
 </document>
