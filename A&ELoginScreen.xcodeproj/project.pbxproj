@@ -34,6 +34,9 @@
 		726A74701E7DF30E00F06C16 /* BGBrakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */; };
 		72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */; };
 		72D4291B1E7F9F8700EDFA59 /* BGDrivelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */; };
+		72E427B31E8933CF0035B3F9 /* BGTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */; };
+		72E427B51E89341E0035B3F9 /* BGSteeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */; };
+		72E427B71E8939630035B3F9 /* InterstateBatteriesLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E427B61E8939630035B3F9 /* InterstateBatteriesLogo.png */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
 		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
@@ -81,6 +84,9 @@
 		726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBrakeViewController.swift; sourceTree = "<group>"; };
 		72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGCoolingViewController.swift; sourceTree = "<group>"; };
 		72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGDrivelineViewController.swift; sourceTree = "<group>"; };
+		72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGTransViewController.swift; sourceTree = "<group>"; };
+		72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGSteeringViewController.swift; sourceTree = "<group>"; };
+		72E427B61E8939630035B3F9 /* InterstateBatteriesLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InterstateBatteriesLogo.png; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				72E427B61E8939630035B3F9 /* InterstateBatteriesLogo.png */,
 				7262151B1E86F08300BF3E4C /* BGBrakeFluidService2.jpg */,
 				726215171E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg */,
 				726215181E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg */,
@@ -187,6 +194,7 @@
 				726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */,
 				72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */,
 				72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */,
+				72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */,
 				72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */,
 				72491D491E845746007A5988 /* FuelServiceViewController.swift */,
 				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
@@ -202,6 +210,7 @@
 				72463E9E1E7DC89A00F355A9 /* Images */,
 				F8DD99571E4A564800DC3EB9 /* Info.plist */,
 				F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */,
+				72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */,
 			);
 			path = "A&ELoginScreen";
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */,
+				72E427B71E8939630035B3F9 /* InterstateBatteriesLogo.png in Resources */,
 				726A74621E7DE28500F06C16 /* BG Products.png in Resources */,
 				72463EA41E7DCFDB00F355A9 /* Diagnostics Icon Update.png in Resources */,
 				72463EA31E7DCFDB00F355A9 /* AC Icon Update.png in Resources */,
@@ -359,7 +369,9 @@
 				72491D4A1E845746007A5988 /* FuelServiceViewController.swift in Sources */,
 				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
 				F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */,
+				72E427B31E8933CF0035B3F9 /* BGTransViewController.swift in Sources */,
 				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,
+				72E427B51E89341E0035B3F9 /* BGSteeringViewController.swift in Sources */,
 				726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */,
 				72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */,
 				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
