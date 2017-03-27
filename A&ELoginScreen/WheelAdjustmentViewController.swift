@@ -1,5 +1,5 @@
 //
-//  ExhaustViewController.swift
+//  WheelAdjustmentViewController.swift
 //  A&ELoginScreen
 //
 //  Created by Stephen Lomangino on 3/27/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExhaustViewController: UIViewController {
+class WheelAdjustmentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
