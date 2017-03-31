@@ -53,6 +53,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.9)
   - GTMSessionFetcher/Full (1.1.9):
     - GTMSessionFetcher/Core (= 1.1.9)
+  - OneSignal (2.4.2)
   - pop (1.0.9)
   - Protobuf (3.2.0)
 
@@ -62,6 +63,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - GoogleSignIn
+  - OneSignal (~> 2.0)
   - pop (~> 1.0)
 
 SPEC CHECKSUMS:
@@ -76,9 +78,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  OneSignal: a94d1ca53d05c29de4f4b150bad8ff9c4cc34f67
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
 
-PODFILE CHECKSUM: 0d20855117c1b15601f205f0afc543f97194402e
+PODFILE CHECKSUM: 6923593aba2c5f8a98c0876216e2e5b5bb9c1194
 
 COCOAPODS: 1.2.0

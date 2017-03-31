@@ -9,9 +9,7 @@
 import UIKit
 import UserNotifications
 import Firebase
-import FirebaseAuth
-import FirebaseMessaging
-import FirebaseInstanceID
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -22,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
      
+        let userEmail = FIRAuth.auth()?.currentUser?.email
+        
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
@@ -37,19 +37,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             application.registerUserNotificationSettings(settings)
         }
         
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "f9293931-303d-4382-8100-8d479465938a", handleNotificationReceived: { (notification) in
+            print("Received Notification - \(String(describing: notification?.payload.notificationID))")
+        }, handleNotificationAction: { (result) in
+            let payload: OSNotificationPayload? = result?.notification.payload
+            
+            var fullMessage: String? = payload?.body
+            if payload?.additionalData != nil {
+                var additionalData: [AnyHashable: Any]? = payload?.additionalData
+                if additionalData!["actionSelected"] != nil {
+                    fullMessage = fullMessage! + "\nPressed ButtonId:\(String(describing: additionalData!["actionSelected"]))"
+                }
+            }
+            
+            print(fullMessage!)
+        }, settings: [kOSSettingsKeyAutoPrompt : true])
+        
+        
+        // Sync hashed email if you have a login system or collect it.
+        //   Will be used to reach the user at the most optimal time of day.
+         OneSignal.syncHashedEmail(userEmail)
     
         FIRApp.configure()
-        application.registerForRemoteNotifications()
+    
         return true
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
-        #if DEBUG
-            FIRInstanceID.instanceID().setAPNSToken(deviceToken as Data, type: .sandbox)
-        #else
-            FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: .Prod)
-        #endif
+    
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-OneSignalNotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Protobuf.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -38,6 +43,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>397347790540AC593764DA2E736AABED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C91F21CD6F5C81D14D962A1E78C8445</key>
 		<dict>
 			<key>primary</key>
 			<true/>

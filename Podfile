@@ -12,6 +12,9 @@ pod 'Firebase/Auth'
 pod ‘Firebase/Messaging'
 pod 'GoogleSignIn'
 pod 'pop', '~> 1.0'
-
+pod 'OneSignal', '~> 2.0'
 end
 
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '~> 2.0'
+end
