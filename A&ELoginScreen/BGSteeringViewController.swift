@@ -9,27 +9,26 @@
 import UIKit
 
 class BGSteeringViewController: UIViewController {
+    
+    
 
+    @IBOutlet weak var steeringVideo: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        getVideo(videoCode: "pQhNfv3ry_U")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func getVideo(videoCode: String){
+        
+        let videoURL = URL(string:"https://www.youtube.com/embed/\(videoCode)")
+        steeringVideo.loadRequest(URLRequest(url: videoURL!))
     }
-    */
 
 }
