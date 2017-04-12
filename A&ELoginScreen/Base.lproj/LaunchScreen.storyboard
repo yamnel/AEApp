@@ -21,6 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiamondPlateBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-33-ycj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A&amp;E" translatesAutoresizingMaskIntoConstraints="NO" id="FYJ-we-qnz">
                                 <rect key="frame" x="9" y="169" width="350" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,5 +45,6 @@
     </scenes>
     <resources>
         <image name="A&amp;E" width="640" height="293"/>
+        <image name="DiamondPlateBackground.jpg" width="2560" height="1600"/>
     </resources>
 </document>

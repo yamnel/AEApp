@@ -47,13 +47,8 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     }
     
     
-    
+    // Logs the user out of the Firebase DB when the logOutButton is pressed
     @IBAction func logOutButton(_ sender: Any) {
-        
-        logOutHandler()
-    }
-    
-    func logOutHandler(){
         
         do{
             
@@ -61,11 +56,10 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
             
         } catch let logoutError{
             
-                print(logoutError)
+            print(logoutError)
         }
         
         self.performSegue(withIdentifier: "logoutSegue", sender: self)
-        
     }
     
     // Opens a SFSafariViewController object when the Current Deals Button is pressed
@@ -92,16 +86,4 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

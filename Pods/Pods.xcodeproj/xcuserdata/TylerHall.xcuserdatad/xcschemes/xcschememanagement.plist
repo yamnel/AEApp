@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMOAuth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>397347790540AC593764DA2E736AABED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4C91F21CD6F5C81D14D962A1E78C8445</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5D579FBDE089FB7DE95622A95B723E98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>76E9ADA02EAE8850CC3E1A72FA56D0E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B0971B6F24B17F8D62F73B963524600</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6EE6A3BCA69DC3464E05EF6992B0B31</key>
+		<key>EA553D34513F4937B3994950D6BF4B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

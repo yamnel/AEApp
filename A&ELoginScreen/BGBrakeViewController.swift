@@ -24,20 +24,11 @@ class BGBrakeViewController: UIViewController {
     }
     
     func getVideo(videoCode: String){
-        
+
+        //Specifies the URL of the video to be loaded using the video code that is passed in
         let videoURL = URL(string:"https://www.youtube.com/embed/\(videoCode)")
+
+        //Loads the video into the UIWebView
         brakeVideo.loadRequest(URLRequest(url: videoURL!))
-        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

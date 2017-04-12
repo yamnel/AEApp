@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B6EE6A3BCA69DC3464E05EF6992B0B31"
+               BlueprintIdentifier = "EA553D34513F4937B3994950D6BF4B64"
                BuildableName = "Pods_A_ELoginScreen.framework"
                BlueprintName = "Pods-A&amp;ELoginScreen"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6EE6A3BCA69DC3464E05EF6992B0B31"
+            BlueprintIdentifier = "EA553D34513F4937B3994950D6BF4B64"
             BuildableName = "Pods_A_ELoginScreen.framework"
             BlueprintName = "Pods-A&amp;ELoginScreen"
             ReferencedContainer = "container:Pods.xcodeproj">

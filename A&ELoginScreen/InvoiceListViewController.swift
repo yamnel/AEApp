@@ -1,10 +1,4 @@
-//
-//  InvoiceListViewController.swift
-//  Print2PDF
-//
-//  Created by Gabriel Theodoropoulos on 14/06/16.
-//  Copyright © 2016 Appcoda. All rights reserved.
-//
+
 
 import UIKit
 
@@ -56,6 +50,12 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
 
+    @IBAction func back(_ sender: Any) {
+        
+        //dismiss your viewController
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     // MARK: IBAction Methods
     

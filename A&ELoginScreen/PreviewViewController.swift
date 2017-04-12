@@ -1,12 +1,7 @@
-//
-//  PreviewViewController.swift
-//  Print2PDF
-//
-//  Created by Gabriel Theodoropoulos on 14/06/16.
-//  Copyright © 2016 Appcoda. All rights reserved.
-//
+
 
 import UIKit
+import MessageUI
 
 class PreviewViewController: UIViewController {
 
@@ -14,11 +9,10 @@ class PreviewViewController: UIViewController {
     
     var invoiceInfo: [String: AnyObject]!
     
-    var invoiceComposer: InvoiceComposer!
+    var invGenerator: InvoiceGenerator!
     
-    var HTMLContent: String!
-    
-    
+    var invoiceContent: String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,26 +28,63 @@ class PreviewViewController: UIViewController {
         
         super.viewWillAppear(animated)
         
-        createInvoiceAsHTML()
+        createInvoice()
     }
     
+
     // MARK: IBAction Methods
     
-    @IBAction func exportToPDF(_ sender: AnyObject) {
+    
+    /*
+     * When the share button is tapped, this method:
+     *  exports the invoice to the app's Documents folder as PDF, 
+     *  and then opens a UIActivityViewController
+     *  which will allow the PDF to be shared using whichever apps can do so
+     */
+    @IBAction func share(_ sender: Any) {
         
+        invGenerator.exportToPDF(HTMLContent: invoiceContent)
+        
+        let fileManager = FileManager.default
+        
+        let pdfPath = (self.getDirectoryPath() as NSString).appendingPathComponent(
+                "Invoice \(invoiceInfo["invoiceNumber"] as! String).pdf")
+        
+        if fileManager.fileExists(atPath: pdfPath){
+
+            let pDF = NSData(contentsOfFile: pdfPath)!
+
+            let activityViewController: UIActivityViewController =
+                    UIActivityViewController(activityItems: [pDF], applicationActivities: nil)
+
+            activityViewController.popoverPresentationController?.sourceView=self.view
+
+            present(activityViewController, animated: true, completion: nil)
+        }
+        else {
+            print("Unable to locate document!")
+        }
     }
     
-    func createInvoiceAsHTML() {
-        invoiceComposer = InvoiceComposer()
-        if let invoiceHTML = invoiceComposer.renderInvoice(invoiceNumber: invoiceInfo["invoiceNumber"] as! String,
+    func getDirectoryPath() -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    func createInvoice() {
+
+        invGenerator = InvoiceGenerator()
+
+        if let invoiceHTML = invGenerator.renderInvoice(invoiceNumber: invoiceInfo["invoiceNumber"] as! String,
                                                            invoiceDate: invoiceInfo["invoiceDate"] as! String,
                                                            recipientInfo: invoiceInfo["recipientInfo"] as! String,
                                                            items: invoiceInfo["items"] as! [[String: String]],
                                                            totalAmount: invoiceInfo["totalAmount"] as! String) {
             
-            webPreview.loadHTMLString(invoiceHTML, baseURL: NSURL(string: invoiceComposer.pathToInvoiceHTMLTemplate!)! as URL)
-            HTMLContent = invoiceHTML
+            webPreview.loadHTMLString(invoiceHTML, baseURL: NSURL(string: invGenerator.invoiceTemplatePath!)! as URL)
+
+            invoiceContent = invoiceHTML
         }
     }
-    
 }

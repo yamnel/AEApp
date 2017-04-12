@@ -24,8 +24,11 @@ class BGDrivelineViewController: UIViewController {
     }
     
     func getVideo(videoCode: String){
-        
+
+        //Specifies the URL of the video to be loaded using the video code that is passed in
         let videoURL = URL(string:"https://www.youtube.com/embed/\(videoCode)")
+
+        //Loads the video into the UIWebView
         drivelineVideo.loadRequest(URLRequest(url: videoURL!))
     }
 }

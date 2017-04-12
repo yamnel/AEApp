@@ -20,6 +20,8 @@ extension UINavigationController {
 
 class LoginController: UIViewController {
     
+    static var credential:FIRAuthCredential?
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -33,9 +35,6 @@ class LoginController: UIViewController {
                 
                 return
             }
-        
-        
-        
                 // No user is signed in.
             
                 //Attempts to sign the user in to the app using the supplied credentials
@@ -54,6 +53,8 @@ class LoginController: UIViewController {
                         //Causes the controller to display on-screen with animation
                         self.present(loginFailureAlertController, animated: true, completion: nil)
                     }
+                    
+//            let credential = FIREmailPasswordAuthProvider.credential(withEmail: email, password: password)
                     
             self.performSegue(withIdentifier: "loginSegue", sender: self)
         

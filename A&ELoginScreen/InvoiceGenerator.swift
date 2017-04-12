@@ -1,20 +1,18 @@
 //
-//  InvoiceComposer.swift
-//  Print2PDF
+//  InvoiceGenerator.swift
 //
 //  Created by James Hall on 4/3/17.
-//  Copyright © 2017 Appcoda. All rights reserved.
 //
 
 import UIKit
 
-class InvoiceComposer: NSObject {
+class InvoiceGenerator: NSObject {
 
-    let pathToInvoiceHTMLTemplate = Bundle.main.path(forResource: "invoice", ofType: "html")
+    let invoiceTemplatePath = Bundle.main.path(forResource: "invoice", ofType: "html")
     
-    let pathToSingleItemHTMLTemplate = Bundle.main.path(forResource: "single_item", ofType: "html")
+    let singleItemTemplatePath = Bundle.main.path(forResource: "single_item", ofType: "html")
     
-    let pathToLastItemHTMLTemplate = Bundle.main.path(forResource: "last_item", ofType: "html")
+    let lastItemTemplatePath = Bundle.main.path(forResource: "last_item", ofType: "html")
     
     let senderInfo = "A &amp E Auto Repair<br>1464 Market Circle<br>Port Charlotte, FL 33955<br>Phone: 941-627-3111"
     
@@ -26,7 +24,7 @@ class InvoiceComposer: NSObject {
     
     var invoiceNumber: String!
     
-    var pdfFilename: String!
+    var pdfDirectory: String!
     
     override init() {
         super.init()
@@ -41,32 +39,32 @@ class InvoiceComposer: NSObject {
         
         do {
             // Load the invoice HTML template code into a String variable.
-            var HTMLContent = try String(contentsOfFile: pathToInvoiceHTMLTemplate!)
+            var templateContent = try String(contentsOfFile: invoiceTemplatePath!)
             
             // Replace all the placeholders with real values except for the items.
             // The logo image.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#LOGO_IMAGE#", with: logoImageURL)
+            templateContent = templateContent.replacingOccurrences(of:"#LOGO_IMAGE#", with: logoImageURL)
             
             // Invoice number.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#INVOICE_NUMBER#", with: invoiceNumber)
+            templateContent = templateContent.replacingOccurrences(of:"#INVOICE_NUMBER#", with: invoiceNumber)
             
             // Invoice date.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#INVOICE_DATE#", with: invoiceDate)
+            templateContent = templateContent.replacingOccurrences(of:"#INVOICE_DATE#", with: invoiceDate)
             
             // Due date (we leave it blank by default).
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#DUE_DATE#", with: dueDate)
+            templateContent = templateContent.replacingOccurrences(of:"#DUE_DATE#", with: dueDate)
             
             // Sender info.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#SENDER_INFO#", with: senderInfo)
+            templateContent = templateContent.replacingOccurrences(of:"#SENDER_INFO#", with: senderInfo)
             
             // Recipient info.
-            HTMLContent = HTMLContent.replacingOccurrences(of: "#RECIPIENT_INFO#", with: recipientInfo.replacingOccurrences(of:"\n", with: "<br>"))
+            templateContent = templateContent.replacingOccurrences(of: "#RECIPIENT_INFO#", with: recipientInfo.replacingOccurrences(of:"\n", with: "<br>"))
             
             // Payment method.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#PAYMENT_METHOD#", with: paymentMethod)
+            templateContent = templateContent.replacingOccurrences(of:"#PAYMENT_METHOD#", with: paymentMethod)
             
             // Total amount.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#TOTAL_AMOUNT#", with: totalAmount)
+            templateContent = templateContent.replacingOccurrences(of:"#TOTAL_AMOUNT#", with: totalAmount)
             
             
             // The invoice items will be added by using a loop.
@@ -79,10 +77,10 @@ class InvoiceComposer: NSObject {
                 
                 // Determine the proper template file.
                 if i != items.count - 1 {
-                    itemHTMLContent = try String(contentsOfFile: pathToSingleItemHTMLTemplate!)
+                    itemHTMLContent = try String(contentsOfFile: singleItemTemplatePath!)
                 }
                 else {
-                    itemHTMLContent = try String(contentsOfFile: pathToLastItemHTMLTemplate!)
+                    itemHTMLContent = try String(contentsOfFile: lastItemTemplatePath!)
                 }
                 
                 // Replace the description and price placeholders with the actual values.
@@ -97,10 +95,10 @@ class InvoiceComposer: NSObject {
             }
             
             // Set the items.
-            HTMLContent = HTMLContent.replacingOccurrences(of:"#ITEMS#", with: allItems)
+            templateContent = templateContent.replacingOccurrences(of:"#ITEMS#", with: allItems)
             
             // The HTML code is ready.
-            return HTMLContent
+            return templateContent
         }
         catch {
             print("Unable to open and use HTML template files.")
@@ -109,22 +107,28 @@ class InvoiceComposer: NSObject {
         return nil
     }
     
-    func exportHTMLContentToPDF(HTMLContent: String) {
-        let printPageRenderer = CustomPrintPageRenderer()
+    func exportToPDF(HTMLContent: String) {
+        
+        
+        let printPageRenderer = PrintRenderer()
         
         let printFormatter = UIMarkupTextPrintFormatter(markupText: HTMLContent)
+
         printPageRenderer.addPrintFormatter(printFormatter, startingAtPageAt: 0)
         
-        let pdfData = drawPDFUsingPrintPageRenderer(printPageRenderer: printPageRenderer)
+        let newPDF = drawPDF(printPageRenderer: printPageRenderer)
         
-        pdfFilename = "\(AppDelegate.getAppDelegate().getDocDir())/Invoice\(invoiceNumber).pdf"
-        pdfData?.write(toFile: pdfFilename, atomically: true)
+        //Hard-coded file name for testing purposes
+//        pdfFilename = "\(AppDelegate.getAppDelegate().getDocDir())/Invoice.pdf"
         
-        print(pdfFilename)
+        pdfDirectory = "\(AppDelegate.getAppDelegate().getDocDir())/Invoice \(invoiceNumber!).pdf"
+        newPDF?.write(toFile: pdfDirectory, atomically: true)
+        
+        print(pdfDirectory)
     }
     
     
-    func drawPDFUsingPrintPageRenderer(printPageRenderer: UIPrintPageRenderer) -> NSData! {
+    func drawPDF(printPageRenderer: UIPrintPageRenderer) -> NSData! {
         let data = NSMutableData()
         
         UIGraphicsBeginPDFContextToData(data, CGRect.zero, nil)

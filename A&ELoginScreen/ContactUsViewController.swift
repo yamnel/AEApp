@@ -12,24 +12,31 @@ import MessageUI
 class ContactUsViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     let number = "9416273111"
-    var facebookLink = "facebook://profile/147188581990505"
+    var facebookLink = "fb://profile/147188581990505"
+
  
 
     @IBAction func callUsButton(_ sender: UIButton) {
         
+        //If the string is not null, appends the specified phone nnumber to a teleprompt-style link
         guard let number = URL(string: "telprompt://" + number) else { return }
+        
+        //Calls the number using the iPhone's native Phone application
         UIApplication.shared.open(number, options: [:], completionHandler: nil)
     }
     
     @IBAction func facebookButton(_ sender: UIButton) {
+
+        //Sets the Facebook URL using the specified string
         let facebookUrl = URL(string: facebookLink)
         
-        let options = [UIApplicationOpenURLOptionUniversalLinksOnly : true]
-        
-        
+         /* If the user has the Facebook application installed,
+          * Link is opened in the Facebook app
+          * Otherwise, link is opened in Safari
+          */
         if UIApplication.shared.canOpenURL(facebookUrl! as URL)
         {
-            UIApplication.shared.open(facebookUrl!, options: options, completionHandler: nil)
+            UIApplication.shared.open(facebookUrl!, options: [:], completionHandler: nil)
             
         } else {
             //redirect to safari because the user doesn't have Facebook
@@ -40,7 +47,7 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
     
     @IBAction func mailButton(_ sender: UIButton) {
         
-        /*If the MailComposeViewController is able to send mail,
+        /* If the MailComposeViewController is able to send mail,
          * A MFMailComposeViewController object is created and
          * An email composition dialog pops up, with
          * aandeautorepair@yahoo.com set as the recipient
@@ -76,16 +83,4 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

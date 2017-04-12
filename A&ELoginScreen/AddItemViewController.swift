@@ -1,10 +1,4 @@
-//
-//  AddItemViewController.swift
-//  Print2PDF
-//
-//  Created by Gabriel Theodoropoulos on 14/06/16.
-//  Copyright © 2016 Appcoda. All rights reserved.
-//
+
 
 import UIKit
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
