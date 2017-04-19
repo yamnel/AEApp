@@ -9,15 +9,26 @@
 import UIKit
 
 class ExhaustViewController: UIViewController {
+    @IBOutlet weak var exhaustVideo: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        getVideo(videoCode: "cXGGNiLDoF0")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getVideo(videoCode: String){
+        
+        //Specifies the URL of the video to be loaded using the video code that is passed in
+        let videoURL = URL(string:"https://www.youtube.com/embed/\(videoCode)")
+        
+        //Loads the video into the UIWebView
+        exhaustVideo.loadRequest(URLRequest(url: videoURL!))
+    }
+
 }
