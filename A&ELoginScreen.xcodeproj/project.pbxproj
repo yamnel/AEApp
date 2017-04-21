@@ -22,6 +22,7 @@
 		7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */; };
 		7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DAD71E73258000AAF7DE /* Attachment-4.png */; };
 		7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DAD91E73262A00AAF7DE /* mail-icon.png */; };
+		72222C4F1EAA6B5B0091EE4F /* CarCareOneLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72222C4E1EAA6B5B0091EE4F /* CarCareOneLogo.png */; };
 		723735911E8193EF00F4ADE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 723735901E8193EF00F4ADE8 /* GoogleService-Info.plist */; };
 		72463E901E7DC34F00F355A9 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72463E8F1E7DC34F00F355A9 /* ServicesViewController.swift */; };
 		72463EA31E7DCFDB00F355A9 /* AC Icon Update.png in Resources */ = {isa = PBXBuildFile; fileRef = 72463E9F1E7DCFDB00F355A9 /* AC Icon Update.png */; };
@@ -33,6 +34,7 @@
 		726215191E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726215171E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg */; };
 		7262151A1E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726215181E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg */; };
 		7262151C1E86F08300BF3E4C /* BGBrakeFluidService2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7262151B1E86F08300BF3E4C /* BGBrakeFluidService2.jpg */; };
+		7265434C1EA675A300AF5092 /* Exhaust-Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7265434B1EA675A300AF5092 /* Exhaust-Image.jpg */; };
 		726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A74591E7DD68100F06C16 /* ACRepairViewController.swift */; };
 		726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */; };
 		726A74621E7DE28500F06C16 /* BG Products.png in Resources */ = {isa = PBXBuildFile; fileRef = 726A74611E7DE28500F06C16 /* BG Products.png */; };
@@ -51,6 +53,7 @@
 		72CF85511E95410B00F50600 /* WheelAlignmentReport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72CF85501E95410B00F50600 /* WheelAlignmentReport.jpg */; };
 		72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */; };
 		72D4291B1E7F9F8700EDFA59 /* BGDrivelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */; };
+		72D90EBB1EAAABD5006EDCD1 /* InterestFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */; };
 		72E076C01E9C36340072049D /* Diagnostics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E076BF1E9C36340072049D /* Diagnostics.jpg */; };
 		72E427B31E8933CF0035B3F9 /* BGTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */; };
 		72E427B51E89341E0035B3F9 /* BGSteeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */; };
@@ -124,6 +127,7 @@
 		7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-app-icon.png"; sourceTree = "<group>"; };
 		7220DAD71E73258000AAF7DE /* Attachment-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attachment-4.png"; path = "../Attachment-4.png"; sourceTree = "<group>"; };
 		7220DAD91E73262A00AAF7DE /* mail-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mail-icon.png"; path = "../mail-icon.png"; sourceTree = "<group>"; };
+		72222C4E1EAA6B5B0091EE4F /* CarCareOneLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CarCareOneLogo.png; path = Img/CarCareOneLogo.png; sourceTree = "<group>"; };
 		7235BA091E8C95F2001F51F3 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		7235BA0A1E8C9997001F51F3 /* A&ELoginScreen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "A&ELoginScreen.entitlements"; sourceTree = "<group>"; };
 		723735901E8193EF00F4ADE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		726215171E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BG-Cooling-System-Service21.jpg"; sourceTree = "<group>"; };
 		726215181E86F07100BF3E4C /* bg-logo-clean-white-oval-copy-1024x616.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-logo-clean-white-oval-copy-1024x616.jpg"; sourceTree = "<group>"; };
 		7262151B1E86F08300BF3E4C /* BGBrakeFluidService2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGBrakeFluidService2.jpg; sourceTree = "<group>"; };
+		7265434B1EA675A300AF5092 /* Exhaust-Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Exhaust-Image.jpg"; path = "Img/Exhaust-Image.jpg"; sourceTree = "<group>"; };
 		726A74591E7DD68100F06C16 /* ACRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRepairViewController.swift; sourceTree = "<group>"; };
 		726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGFluidsViewController.swift; sourceTree = "<group>"; };
 		726A74611E7DE28500F06C16 /* BG Products.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG Products.png"; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 		72CF85501E95410B00F50600 /* WheelAlignmentReport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WheelAlignmentReport.jpg; path = Img/WheelAlignmentReport.jpg; sourceTree = "<group>"; };
 		72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGCoolingViewController.swift; sourceTree = "<group>"; };
 		72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGDrivelineViewController.swift; sourceTree = "<group>"; };
+		72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterestFreeViewController.swift; path = "View Controllers/InterestFreeViewController.swift"; sourceTree = "<group>"; };
 		72E076BF1E9C36340072049D /* Diagnostics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Diagnostics.jpg; path = Img/Diagnostics.jpg; sourceTree = "<group>"; };
 		72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGTransViewController.swift; sourceTree = "<group>"; };
 		72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGSteeringViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +265,7 @@
 				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
 				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
 				F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */,
+				72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -276,6 +283,8 @@
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				72222C4E1EAA6B5B0091EE4F /* CarCareOneLogo.png */,
+				7265434B1EA675A300AF5092 /* Exhaust-Image.jpg */,
 				72C249B71E9D79940067A3A8 /* DiamondPlateBackground.jpg */,
 				72FC8B711E8EA16000BEAD17 /* BGDrivelineService.jpg */,
 				72FC8B6F1E8E983000BEAD17 /* BGTransmissionService.jpg */,
@@ -482,6 +491,7 @@
 				72E427B71E8939630035B3F9 /* InterstateBatteriesLogo.png in Resources */,
 				72F8A9421E8E950500670A59 /* BGSteeringService.png in Resources */,
 				726A74621E7DE28500F06C16 /* BG Products.png in Resources */,
+				72222C4F1EAA6B5B0091EE4F /* CarCareOneLogo.png in Resources */,
 				72463EA41E7DCFDB00F355A9 /* Diagnostics Icon Update.png in Resources */,
 				72463EA31E7DCFDB00F355A9 /* AC Icon Update.png in Resources */,
 				72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */,
@@ -504,6 +514,7 @@
 				726A746B1E7DE44A00F06C16 /* DrivelineSvc-Icon150-150x150.png in Resources */,
 				72FC8B721E8EA16000BEAD17 /* BGDrivelineService.jpg in Resources */,
 				72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */,
+				7265434C1EA675A300AF5092 /* Exhaust-Image.jpg in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
 				720A90D41E92BB390043C82F /* single_item.html in Resources */,
 				7210F0EE1E9C342100252EB4 /* TireBrands.png in Resources */,
@@ -631,6 +642,7 @@
 				720A90C91E92B8F30043C82F /* PrintRenderer.swift in Sources */,
 				720A90C81E92B8F30043C82F /* CreatorViewController.swift in Sources */,
 				72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */,
+				72D90EBB1EAAABD5006EDCD1 /* InterestFreeViewController.swift in Sources */,
 				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
 				F8181F401E896B9E0043C3FB /* DiagnosticsViewController.swift in Sources */,
 				F8181F421E896C280043C3FB /* ExhaustViewController.swift in Sources */,
