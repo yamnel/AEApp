@@ -866,7 +866,7 @@ All of the elements that make your car go straight are called “alignment.” S
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v62-oG-WFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2984.8000000000002" y="-583.80809595202402"/>
+            <point key="canvasLocation" x="2985" y="-632"/>
         </scene>
         <!--Exhaust View Controller-->
         <scene sceneID="vO8-NS-F4z">
@@ -969,7 +969,7 @@ All of the elements that make your car go straight are called “alignment.” S
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7d-bU-r8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3808.8000000000002" y="-584.70764617691157"/>
+            <point key="canvasLocation" x="3809" y="-632"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="2r6-ym-CUl">
@@ -1134,7 +1134,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-wv-Vec">
-                                                <rect key="frame" x="31" y="23" width="144" height="129"/>
+                                                <rect key="frame" x="21" y="23" width="144" height="136"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="AC Icon Update.png"/>
                                                 <connections>
@@ -1154,14 +1154,6 @@ All of the elements that make your car go straight are called “alignment.” S
                                                 <state key="normal" image="BG Products.png"/>
                                                 <connections>
                                                     <segue destination="8sr-WF-nSL" kind="show" id="v3O-gc-Cj7"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLl-1A-KqV">
-                                                <rect key="frame" x="202" y="400" width="155" height="160"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="InterstateBatteriesLogo.png"/>
-                                                <connections>
-                                                    <segue destination="YJT-VV-wDL" kind="show" id="uyW-2X-dyy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-lg-kb7">
@@ -1187,6 +1179,39 @@ All of the elements that make your car go straight are called “alignment.” S
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxc-91-59s">
+                                                <rect key="frame" x="21" y="215" width="155" height="124"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <size key="titleShadowOffset" width="4" height="7"/>
+                                                <state key="normal" title="Button" image="CarCareOneLogo.png">
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Z9o-lJ-gHc" kind="show" id="yef-dQ-FaT"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interest-Free" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BD-8c-PXu">
+                                                <rect key="frame" x="19" y="333" width="160" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Financing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTK-I6-dhb">
+                                                <rect key="frame" x="21" y="356" width="160" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLl-1A-KqV">
+                                                <rect key="frame" x="203" y="409" width="155" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="InterstateBatteriesLogo.png"/>
+                                                <connections>
+                                                    <segue destination="YJT-VV-wDL" kind="show" id="cWV-5d-POI"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1000" id="Krc-Nj-mO1"/>
@@ -1239,7 +1264,11 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </constraints>
                                 <items>
                                     <navigationItem title="BG Products" id="YhV-ei-hgD">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="afh-gI-Vy6"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="afh-gI-Vy6">
+                                            <connections>
+                                                <segue destination="8w5-bp-Sex" kind="show" id="jKo-LZ-5ar"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -2824,7 +2853,7 @@ Replacing old refrigerant has another benefit: refrigerant tends to gather moist
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF5-DL-N8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2984.8000000000002" y="-1547.2263868065968"/>
+            <point key="canvasLocation" x="2985" y="-1631"/>
         </scene>
         <!--Diagnostics View Controller-->
         <scene sceneID="7tc-d6-kL5">
@@ -2913,7 +2942,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc5-qp-GmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3808.8000000000002" y="-1547.2263868065968"/>
+            <point key="canvasLocation" x="3809" y="-1632"/>
         </scene>
         <!--Battery View Controller-->
         <scene sceneID="PyK-ae-k0q">
@@ -3410,6 +3439,124 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
             </objects>
             <point key="canvasLocation" x="2041" y="1479"/>
         </scene>
+        <!--Interest Free View Controller-->
+        <scene sceneID="nfD-bZ-3c7">
+            <objects>
+                <viewController id="Z9o-lJ-gHc" customClass="InterestFreeViewController" customModule="A_ELoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Maw-FL-LXx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dg5-6I-YqQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YpZ-BR-9zS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09k-39-u3w">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Interest-Free Finanacing" id="hTF-za-8Qz">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="oXR-c3-mJs">
+                                            <connections>
+                                                <segue destination="8w5-bp-Sex" kind="show" id="c5v-TQ-2Gb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTZ-1L-Oyp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-v7-z1k">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarCareOneLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-wK-EM8">
+                                                <rect key="frame" x="9" y="8" width="357" height="219"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="219" id="OdI-up-1jz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BM3-KW-H3R">
+                                                <rect key="frame" x="26" y="235" width="340" height="128"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="jqM-vb-nUO"/>
+                                                </constraints>
+                                                <string key="text">No interest if paid in full within 6 months on purchases of $199 or more made with your CarCareOne credit card, on vehicle services and repairs at A &amp; E Auto Repair</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvG-YI-XDl">
+                                                <rect key="frame" x="86" y="547" width="202" height="61"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="Ldr-Q5-kNX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="26"/>
+                                                <state key="normal" title="Apply Now!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="apply:" destination="Z9o-lJ-gHc" eventType="touchUpInside" id="DWS-cS-ZOS"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QL0-Mw-gRw">
+                                                <rect key="frame" x="17" y="365" width="340" height="153"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="153" id="5li-jV-z5i"/>
+                                                </constraints>
+                                                <string key="text">A &amp; E Auto Repair offers you the purchasing power you need, so that you can get your back on the road today! Put all of your services and repair on a new CarCareOne account  from Synchrony Bank and get convenient, low monthly payments!</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="QL0-Mw-gRw" firstAttribute="centerX" secondItem="7Dx-v7-z1k" secondAttribute="centerX" id="1Xu-MJ-1Dv"/>
+                                            <constraint firstItem="ZvG-YI-XDl" firstAttribute="top" secondItem="QL0-Mw-gRw" secondAttribute="bottom" constant="29" id="3DQ-89-aYH"/>
+                                            <constraint firstItem="QL0-Mw-gRw" firstAttribute="leading" secondItem="7Dx-v7-z1k" secondAttribute="leading" constant="17" id="40y-lj-6iP"/>
+                                            <constraint firstItem="ZvG-YI-XDl" firstAttribute="leading" secondItem="7Dx-v7-z1k" secondAttribute="leading" constant="86" id="6Lf-BF-0Jl"/>
+                                            <constraint firstItem="ahg-wK-EM8" firstAttribute="trailing" secondItem="BM3-KW-H3R" secondAttribute="trailing" id="Eff-88-XmO"/>
+                                            <constraint firstItem="BM3-KW-H3R" firstAttribute="top" secondItem="ahg-wK-EM8" secondAttribute="bottom" constant="8" symbolic="YES" id="Gmq-nR-wYH"/>
+                                            <constraint firstItem="QL0-Mw-gRw" firstAttribute="top" secondItem="BM3-KW-H3R" secondAttribute="bottom" constant="2" id="X5o-YW-6EE"/>
+                                            <constraint firstItem="BM3-KW-H3R" firstAttribute="leading" secondItem="7Dx-v7-z1k" secondAttribute="leading" constant="26" id="Zcb-5h-lyC"/>
+                                            <constraint firstItem="QL0-Mw-gRw" firstAttribute="centerX" secondItem="ZvG-YI-XDl" secondAttribute="centerX" id="cLr-4N-5Kr"/>
+                                            <constraint firstAttribute="height" constant="1000" id="exw-jc-CGA"/>
+                                            <constraint firstItem="ahg-wK-EM8" firstAttribute="centerX" secondItem="QL0-Mw-gRw" secondAttribute="centerX" id="oit-4O-5uG"/>
+                                            <constraint firstItem="ahg-wK-EM8" firstAttribute="top" secondItem="7Dx-v7-z1k" secondAttribute="topMargin" id="sVT-8d-h6x"/>
+                                            <constraint firstItem="ahg-wK-EM8" firstAttribute="leading" secondItem="7Dx-v7-z1k" secondAttribute="leading" constant="9" id="uCH-7P-R4K"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7Dx-v7-z1k" firstAttribute="top" secondItem="sTZ-1L-Oyp" secondAttribute="top" id="01p-iI-7Wx"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Dx-v7-z1k" secondAttribute="bottom" id="VU8-yJ-e1l"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Dx-v7-z1k" secondAttribute="trailing" id="Xsl-zn-nRO"/>
+                                    <constraint firstItem="7Dx-v7-z1k" firstAttribute="leading" secondItem="sTZ-1L-Oyp" secondAttribute="leading" id="jEe-PU-WPm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="09k-39-u3w" firstAttribute="top" secondItem="Maw-FL-LXx" secondAttribute="bottom" id="3zO-JB-CaB"/>
+                            <constraint firstAttribute="trailing" secondItem="sTZ-1L-Oyp" secondAttribute="trailing" id="DR7-0f-KME"/>
+                            <constraint firstItem="sTZ-1L-Oyp" firstAttribute="leading" secondItem="YpZ-BR-9zS" secondAttribute="leading" id="DqJ-KI-xbg"/>
+                            <constraint firstItem="09k-39-u3w" firstAttribute="trailing" secondItem="sTZ-1L-Oyp" secondAttribute="trailing" id="EKT-6i-yac"/>
+                            <constraint firstItem="7Dx-v7-z1k" firstAttribute="width" secondItem="YpZ-BR-9zS" secondAttribute="width" id="HtZ-Xq-AIW"/>
+                            <constraint firstItem="09k-39-u3w" firstAttribute="leading" secondItem="sTZ-1L-Oyp" secondAttribute="leading" id="Obo-rM-0A4"/>
+                            <constraint firstItem="Dg5-6I-YqQ" firstAttribute="top" secondItem="sTZ-1L-Oyp" secondAttribute="bottom" id="ie9-oy-BOA"/>
+                            <constraint firstItem="sTZ-1L-Oyp" firstAttribute="top" secondItem="09k-39-u3w" secondAttribute="bottom" id="moQ-bK-GLy"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSP-3M-3j0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2984.8000000000002" y="358.92053973013498"/>
+        </scene>
     </scenes>
     <resources>
         <image name="2016 A&amp;E Stroke Logo.png" width="2440" height="1016"/>
@@ -3423,6 +3570,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
         <image name="BGSteeringService.png" width="433" height="264"/>
         <image name="BGTransmissionService.jpg" width="750" height="400"/>
         <image name="BrakesSvc-Icon150-150x150.png" width="150" height="150"/>
+        <image name="CarCareOneLogo.png" width="300" height="188"/>
         <image name="CoolingSvc-Icon150-150x150.png" width="150" height="150"/>
         <image name="Diagnostics Icon Update.png" width="328" height="300"/>
         <image name="Diagnostics.jpg" width="3264" height="2448"/>
@@ -3430,7 +3578,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
         <image name="DrivelineSvc-Icon150-150x150.png" width="150" height="150"/>
         <image name="Exhaust-Image.jpg" width="1024" height="765"/>
         <image name="FuelSvc-Icon150-150x150.png" width="150" height="150"/>
-        <image name="InterstateBatteriesLogo.png" width="513" height="345"/>
+        <image name="InterstateBatteriesLogo.png" width="512" height="290"/>
         <image name="SteeringSvc-Icon150-150x150.png" width="150" height="150"/>
         <image name="TireBrands.png" width="1261" height="482"/>
         <image name="Tires Icon Update.png" width="328" height="328"/>
