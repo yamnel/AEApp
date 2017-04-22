@@ -74,6 +74,8 @@
 		F8181F3E1E896B000043C3FB /* BatteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3D1E896B000043C3FB /* BatteryViewController.swift */; };
 		F8181F401E896B9E0043C3FB /* DiagnosticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3F1E896B9E0043C3FB /* DiagnosticsViewController.swift */; };
 		F8181F421E896C280043C3FB /* ExhaustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F411E896C280043C3FB /* ExhaustViewController.swift */; };
+		F81A996E1EAAB1CF0052CA1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A996D1EAAB1CF0052CA1D /* Constants.swift */; };
+		F81A99701EAAB2FA0052CA1D /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */; };
 		F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */; };
 		F87E8AE41E7B0433008554FA /* A&ELoginScreen.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */; };
 		F87E8AE61E7B0443008554FA /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = F87E8AE51E7B0443008554FA /* Pods */; };
@@ -183,6 +185,8 @@
 		F8181F3D1E896B000043C3FB /* BatteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryViewController.swift; sourceTree = "<group>"; };
 		F8181F3F1E896B9E0043C3FB /* DiagnosticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticsViewController.swift; sourceTree = "<group>"; };
 		F8181F411E896C280043C3FB /* ExhaustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhaustViewController.swift; sourceTree = "<group>"; };
+		F81A996D1EAAB1CF0052CA1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPageController.swift; sourceTree = "<group>"; };
 		F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "A&ELoginScreen.xcworkspace"; sourceTree = "<group>"; };
 		F87E8AE51E7B0443008554FA /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
 				F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */,
 				72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */,
+				F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 			children = (
 				720A90C31E92B8F30043C82F /* PrintRenderer.swift */,
 				720A90C41E92B8F30043C82F /* InvoiceGenerator.swift */,
+				F81A996D1EAAB1CF0052CA1D /* Constants.swift */,
 			);
 			name = "Other Classes";
 			sourceTree = "<group>";
@@ -633,6 +639,7 @@
 				72491D4A1E845746007A5988 /* BGFuelServiceViewController.swift in Sources */,
 				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
 				F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */,
+				F81A996E1EAAB1CF0052CA1D /* Constants.swift in Sources */,
 				720A90CA1E92B8F30043C82F /* InvoiceGenerator.swift in Sources */,
 				72E427B31E8933CF0035B3F9 /* BGTransViewController.swift in Sources */,
 				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,
@@ -644,6 +651,7 @@
 				72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */,
 				72D90EBB1EAAABD5006EDCD1 /* InterestFreeViewController.swift in Sources */,
 				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
+				F81A99701EAAB2FA0052CA1D /* UserInformation.swift in Sources */,
 				F8181F401E896B9E0043C3FB /* DiagnosticsViewController.swift in Sources */,
 				F8181F421E896C280043C3FB /* ExhaustViewController.swift in Sources */,
 				726A74701E7DF30E00F06C16 /* BGBrakeViewController.swift in Sources */,
