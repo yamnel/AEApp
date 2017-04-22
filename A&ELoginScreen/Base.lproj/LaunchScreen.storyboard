@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +22,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiamondPlateBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-33-ycj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiamondPlateBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-33-ycj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A&amp;E" translatesAutoresizingMaskIntoConstraints="NO" id="FYJ-we-qnz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A&amp;E" translatesAutoresizingMaskIntoConstraints="NO" id="FYJ-we-qnz">
                                 <rect key="frame" x="9" y="169" width="350" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mBj-DD-XgD">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mBj-DD-XgD">
                                 <rect key="frame" x="176" y="394" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Xdd-XV-8vT"/>
+                                </constraints>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.81729495529999996" blue="0.0554388985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wcf-33-ycj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ap9-Rm-0Sy"/>
+                            <constraint firstAttribute="trailing" secondItem="Wcf-33-ycj" secondAttribute="trailing" id="D88-BK-B9q"/>
+                            <constraint firstItem="Wcf-33-ycj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="E2G-0d-ayR"/>
+                            <constraint firstItem="FYJ-we-qnz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-7" id="Eat-yi-VqV"/>
+                            <constraint firstItem="mBj-DD-XgD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="176" id="ILF-LB-0Mj"/>
+                            <constraint firstItem="FYJ-we-qnz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="149" id="KxL-nS-mX9"/>
+                            <constraint firstItem="mBj-DD-XgD" firstAttribute="top" secondItem="FYJ-we-qnz" secondAttribute="bottom" constant="53" id="mpM-MI-8bD"/>
+                            <constraint firstItem="Wcf-33-ycj" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="qJQ-XO-U6Y"/>
+                            <constraint firstItem="FYJ-we-qnz" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="thd-4E-oXr"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mBj-DD-XgD" secondAttribute="bottom" constant="253" id="z5b-Gb-Re1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
