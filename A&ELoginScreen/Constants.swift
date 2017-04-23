@@ -18,7 +18,11 @@ let PAYMENT_DATES_TABLE = "vapppayments"
 let ORDER_LABOR_TABLE = "vapplabor"
 let ORDER_PARTS_TABLE = "vappparts"
 
+var SELECTED_PAYMENT_DATE: String!
 
+var CLEAN_PAYMENT_DATE:String{
+    return SELECTED_PAYMENT_DATE.replacingOccurrences(of: " ", with: "%20").replacingOccurrences(of: ":", with: "%3A")
+}
 
 
 
@@ -28,3 +32,4 @@ let URL_STRING: String = "http://localhost:8080/api/v2/shopdb/_table/"
 let USER_ID: String = "1989"
 
 typealias DownloadComplete = (_ json: JSON?) -> (Void)
+typealias LaborDownloadComplete = (_ json: JSON?) -> (Void)

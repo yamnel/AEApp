@@ -30,7 +30,6 @@ class UserInformation{
     
     var listOfPaymentDates: [String] =  []
     
-    
     init(){
         // get the all te car's info
         self.carInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.carInfoFileName).json"
@@ -66,6 +65,42 @@ class UserInformation{
     
     
     
+    func parseOrderLabor() -> [String:String]{
+        var ret: [String:String]!
+        var description: [String] = []
+        var cost:[String] = []
+        
+        var jsondict:Dictionary<String, AnyObject>!
+        var jsonData: Data!
+        do{
+            let url = URL(fileURLWithPath: self.orderLaborInfoPath)
+            jsonData = try Data(contentsOf: url)
+            jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
+            
+            
+        }catch{
+            
+        }
+        
+        
+        //        print("TESTING  \(jsondict)") // TESTING \\
+        let orderLaborList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
+        
+        for var info in orderLaborList{
+            description.append(info["Description"]! as! String)
+            cost.append(String(info["Sale"]! as! Int))
+            
+        }
+        
+        for var i in 0..<description.count{
+            ret[description[i]] = cost[i]
+        }
+        
+        return ret
+        
+        
+    }
+    
     func parsePaymentDates(){
         var jsondict:Dictionary<String, AnyObject>!
         var jsonData: Data!
@@ -90,9 +125,10 @@ class UserInformation{
     }
     
     
-    func getUserOrderLaborInfo(completed: @escaping DownloadComplete, paymentDate: String){
-        let userGeneralInfoURL = URL(string: "\(URL_STRING)\(ORDER_LABOR_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)&filter=PaymentDate='\(paymentDate)'")!
-        Alamofire.request(userGeneralInfoURL).validate().responseJSON { response in
+    func getUserOrderLaborInfo(completed: @escaping LaborDownloadComplete){
+        
+        let url = URL(string: "\(URL_STRING)\(ORDER_LABOR_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)&filter=PaymentDate='\(CLEAN_PAYMENT_DATE)'")!
+        Alamofire.request(url).validate().responseJSON { response in
             do{
                 let json = JSON(data: response.data!)
                 

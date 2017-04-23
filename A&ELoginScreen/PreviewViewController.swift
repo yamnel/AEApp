@@ -7,7 +7,7 @@ class PreviewViewController: UIViewController {
 
     @IBOutlet weak var webPreview: UIWebView!
     
-    var invoiceInfo: [String: AnyObject]!
+    var invoiceInfo: [String: AnyObject] = [:]
     
     //testing\\
     
@@ -26,6 +26,30 @@ class PreviewViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // TESTING \\
+        
+        
+        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
+        //        print(LoginController.currentUser.orderLaborInfoPath)
+        
+        LoginController.currentUser.getUserOrderLaborInfo { info in
+            LoginController.currentUser.orderLaborInfoData = info
+            print("The paymentInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
+            
+            let str = LoginController.currentUser.orderLaborInfoData.description
+            //            print(str) // TESTING \\
+            
+            do{
+                try str.write(toFile: LoginController.currentUser.orderLaborInfoPath, atomically: false, encoding: String.Encoding.utf8)
+                
+            } catch{
+                print("Could not write to file")
+            }
+        }
+        
+        // TESTING \\
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,15 +104,31 @@ class PreviewViewController: UIViewController {
         return documentsDirectory
     }
     
+//    func createInvoice() {
+//        
+//        invGenerator = InvoiceGenerator()
+//        
+//        if let invoiceHTML = invGenerator.renderInvoice(invoiceNumber: invoiceInfo["invoiceNumber"] as! String,
+//                                                        invoiceDate: invoiceInfo["invoiceDate"] as! String,
+//                                                        recipientInfo: invoiceInfo["recipientInfo"] as! String,
+//                                                        items: invoiceInfo["items"] as! [[String: String]],
+//                                                        totalAmount: invoiceInfo["totalAmount"] as! String) {
+//            
+//            webPreview.loadHTMLString(invoiceHTML, baseURL: NSURL(string: invGenerator.invoiceTemplatePath!)! as URL)
+//            
+//            invoiceContent = invoiceHTML
+//        }
+//    }
+    
     func createInvoice() {
 
         invGenerator = InvoiceGenerator()
 
-        if let invoiceHTML = invGenerator.renderInvoice(invoiceNumber: invoiceInfo["invoiceNumber"] as! String,
-                                                           invoiceDate: invoiceInfo["invoiceDate"] as! String,
-                                                           recipientInfo: invoiceInfo["recipientInfo"] as! String,
-                                                           items: invoiceInfo["items"] as! [[String: String]],
-                                                           totalAmount: invoiceInfo["totalAmount"] as! String) {
+        if let invoiceHTML = invGenerator.renderInvoice(invoiceNumber: SELECTED_PAYMENT_DATE,
+                                                           invoiceDate: SELECTED_PAYMENT_DATE,
+                                                           recipientInfo: "",
+                                                           items: invoiceInfo["items"] as! [[String : String]],
+                                                           totalAmount: "1000") {
             
             webPreview.loadHTMLString(invoiceHTML, baseURL: NSURL(string: invGenerator.invoiceTemplatePath!)! as URL)
 

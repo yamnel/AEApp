@@ -3307,7 +3307,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hmu-JQ-yuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3833" y="1654"/>
+            <point key="canvasLocation" x="3833" y="1935"/>
         </scene>
         <!--Add Item View Controller-->
         <scene sceneID="VwL-l2-WaZ">

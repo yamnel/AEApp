@@ -25,9 +25,7 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     // TESTING \\
     
     
-    var invoiceDare: String!
-    
-    
+    var invoiceDate: String!
     
     
     
@@ -46,6 +44,9 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Add a tap gesture recognizer to the view to dismiss the keyboard.
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
+        
+        items.append(LoginController.currentUser.parseOrderLabor())
+        
     }
 
     
