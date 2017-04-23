@@ -9,6 +9,15 @@ class PreviewViewController: UIViewController {
     
     var invoiceInfo: [String: AnyObject]!
     
+    //testing\\
+    
+    
+    
+    
+    //testing\\
+    
+    
+    
     var invGenerator: InvoiceGenerator!
     
     var invoiceContent: String!
@@ -47,8 +56,7 @@ class PreviewViewController: UIViewController {
         
         let fileManager = FileManager.default
         
-        let pdfPath = (self.getDirectoryPath() as NSString).appendingPathComponent(
-                "Invoice \(invoiceInfo["invoiceNumber"] as! String).pdf")
+        let pdfPath = (self.getDirectoryPath() as NSString).appendingPathComponent("Invoice \(invoiceInfo["invoiceNumber"] as! String).pdf")
         
         if fileManager.fileExists(atPath: pdfPath){
 

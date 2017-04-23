@@ -7,12 +7,18 @@
 //
 
 import Foundation
-
+import SwiftyJSON
 
 let API_KEY: String = "065dce537ae7be843043e8938b77dfc27f48cfe9bd3fc3daa0769065e70f7ef0"
 
-let VEHICLE_TABLE = "vappvehicles"
 let CUSTOMER_TABLE = "SM.Customer"
+let VEHICLE_TABLE = "vappvehicles"
+
+let PAYMENT_DATES_TABLE = "vapppayments"
+let ORDER_LABOR_TABLE = "vapplabor"
+let ORDER_PARTS_TABLE = "vappparts"
+
+
 
 
 

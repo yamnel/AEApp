@@ -6,17 +6,127 @@
 //  Copyright © 2017 Yamnel. All rights reserved.
 //
 
+//import UIKit
 import Foundation
 import Alamofire
 import SwiftyJSON
 
 class UserInformation{
+    var carInfoPath: String!
+    var carInfoData: JSON!
+    var carInfoFileName: String = "user_car_info"
+    
+    var paymentDatesInfoPath: String!
+    var paymentDatesInfoData: JSON!
+    var paymentDatesInfoFileName: String = "user_payment_info"
+    
+    var orderPartsInfoPath: String!
+    var orderPartsInfoData: JSON!
+    var orderPartsInfoFileName: String = "user_order_parts_info"
+    
+    var orderLaborInfoPath: String!
+    var orderLaborInfoData: JSON!
+    var orderLaborInfoFileName: String = "user_order_laborinfo"
+    
+    var listOfPaymentDates: [String] =  []
+    
+    
+    init(){
+        // get the all te car's info
+        self.carInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.carInfoFileName).json"
+        self.getUserCarInfo{ info in
+            self.carInfoData = info
+            let str = self.carInfoData.description
+            
+            do{
+                try str.write(toFile: self.carInfoPath, atomically: false, encoding: String.Encoding.utf8)
+            } catch{
+                print("Could not write to file")
+            }
+        }
+        
+        
+        // get all the order dates
+        self.paymentDatesInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.paymentDatesInfoFileName).json"
+        self.getUserOrderDateInfo{ info in
+            self.paymentDatesInfoData = info
+//            print("The paymentInfo is \(self.paymentDatesInfoData)") //TESTING\\
+            
+            let str = self.paymentDatesInfoData.description
+//            print(str) // TESTING \\
+            
+            do{
+                try str.write(toFile: self.paymentDatesInfoPath, atomically: false, encoding: String.Encoding.utf8)
+            } catch{
+                print("Could not write to file")
+            }
+        }
+        
+    }
     
     
     
+    func parsePaymentDates(){
+        var jsondict:Dictionary<String, AnyObject>!
+        var jsonData: Data!
+        do{
+            let url = URL(fileURLWithPath: self.paymentDatesInfoPath)
+            jsonData = try Data(contentsOf: url)
+            jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
+
+            
+        }catch{
+            
+        }
+        
+        
+//        print("TESTING  \(jsondict)") // TESTING \\
+        let orderDateList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
+        
+        for var dateInfo in orderDateList{
+            self.listOfPaymentDates.append(dateInfo["PaymentDate"]! as! String)
+        }
+
+    }
     
     
-    func getUserCarInfo(completed: @escaping CarNameDownloadComplete){
+    func getUserOrderLaborInfo(completed: @escaping DownloadComplete, paymentDate: String){
+        let userGeneralInfoURL = URL(string: "\(URL_STRING)\(ORDER_LABOR_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)&filter=PaymentDate='\(paymentDate)'")!
+        Alamofire.request(userGeneralInfoURL).validate().responseJSON { response in
+            do{
+                let json = JSON(data: response.data!)
+                
+                completed(json)
+            }
+        }
+    }
+
+    
+    func getUserOrderPartsInfo(completed: @escaping DownloadComplete, paymentDate: String){
+        let userGeneralInfoURL = URL(string: "\(URL_STRING)\(ORDER_PARTS_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)&filter=PaymentDate='\(paymentDate)'")!
+        Alamofire.request(userGeneralInfoURL).validate().responseJSON { response in
+            do{
+                let json = JSON(data: response.data!)
+                
+                completed(json)
+            }
+        }
+    }
+
+    
+    
+    func getUserOrderDateInfo(completed: @escaping DownloadComplete){
+        let userGeneralInfoURL = URL(string: "\(URL_STRING)\(PAYMENT_DATES_TABLE)?api_key=\(API_KEY)&filter=CustomerId=\(USER_ID)")!
+        Alamofire.request(userGeneralInfoURL).validate().responseJSON { response in
+            do{
+                let json = JSON(data: response.data!)
+                
+                completed(json)
+            }
+        }
+    }
+    
+    func getUserCarInfo(completed: @escaping DownloadComplete){
         let userGeneralInfoURL = URL(string: "\(URL_STRING)\(VEHICLE_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)")!
         Alamofire.request(userGeneralInfoURL).validate().responseJSON { response in
             do{
@@ -26,4 +136,8 @@ class UserInformation{
             }
         }
     }
+    
+    
+    
+    
 }

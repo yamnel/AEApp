@@ -22,8 +22,19 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     var firstAppeared = true
     
     var nextNumberAsString: String!
+    // TESTING \\
     
     
+    var invoiceDare: String!
+    
+    
+    
+    
+    
+    
+    
+    // TESTING \\
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -161,6 +172,7 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (items != nil) ? items.count : 0
+//        return LoginController.currentUser.listOfPaymentDates.count
     }
     
     

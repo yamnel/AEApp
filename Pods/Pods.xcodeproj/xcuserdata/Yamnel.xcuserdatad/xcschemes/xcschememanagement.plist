@@ -4,30 +4,65 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMOAuth2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-A&amp;ELoginScreen.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OneSignalNotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Protobuf.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
+		<key>4C91F21CD6F5C81D14D962A1E78C8445</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C91F21CD6F5C81D14D962A1E78C8445</key>
+		<key>61BE5B4F477BB91ABBF1B887DF0A53F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62DC9384810F5A4ED837AE77A14AF93E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,22 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>725EC0047B9AF8D8CAA2C15DDE441551</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>76E9ADA02EAE8850CC3E1A72FA56D0E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B0971B6F24B17F8D62F73B963524600</key>
+		<key>965D75949E7ED7306DFD431485F87942</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA553D34513F4937B3994950D6BF4B64</key>
+		<key>BE6CA0194FAA1C4541AD813342B0DB96</key>
 		<dict>
 			<key>primary</key>
 			<true/>

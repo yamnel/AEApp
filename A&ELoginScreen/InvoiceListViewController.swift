@@ -97,7 +97,8 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (invoices != nil) ? invoices.count : 0
+//        return (invoices != nil) ? invoices.count : 0
+        return LoginController.currentUser.listOfPaymentDates.count
     }
     
     
@@ -108,8 +109,8 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
             cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "invoiceCell")
         }
         
-        cell.textLabel?.text = "\(invoices[(indexPath as NSIndexPath).row]["invoiceNumber"] as! String) - \(invoices[(indexPath as NSIndexPath).row]["invoiceDate"] as! String) - \(invoices[(indexPath as NSIndexPath).row]["totalAmount"] as! String)"
-        
+//        cell.textLabel?.text = "\(invoices[(indexPath as NSIndexPath).row]["invoiceNumber"] as! String) - \(invoices[(indexPath as NSIndexPath).row]["invoiceDate"] as! String) - \(invoices[(indexPath as NSIndexPath).row]["totalAmount"] as! String)"
+        cell.textLabel?.text = LoginController.currentUser.listOfPaymentDates[indexPath.row]
         return cell
     }
     

@@ -243,34 +243,12 @@
 		720A90CD1E92B9070043C82F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				726A74591E7DD68100F06C16 /* ACRepairViewController.swift */,
-				720A90C11E92B8F30043C82F /* AddItemViewController.swift */,
-				F8181F3D1E896B000043C3FB /* BatteryViewController.swift */,
-				726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */,
-				72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */,
-				72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */,
-				726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */,
-				72491D491E845746007A5988 /* BGFuelServiceViewController.swift */,
-				72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */,
-				72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */,
-				72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */,
-				720A90C21E92B8F30043C82F /* CreatorViewController.swift */,
-				F8181F3F1E896B9E0043C3FB /* DiagnosticsViewController.swift */,
-				F8181F411E896C280043C3FB /* ExhaustViewController.swift */,
-				720A90C51E92B8F30043C82F /* InvoiceListViewController.swift */,
-				720A90D51E92EAAE0043C82F /* LaunchScreenViewController.swift */,
 				F8DD994D1E4A564800DC3EB9 /* LoginController.swift */,
 				72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */,
-				720A90C61E92B8F30043C82F /* PreviewViewController.swift */,
 				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
-				72463E8F1E7DC34F00F355A9 /* ServicesViewController.swift */,
 				F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */,
-				F8181F391E8962D80043C3FB /* TiresViewController.swift */,
-				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
-				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
-				F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */,
-				72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */,
-				F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */,
+				F8B19E9A1EAD0A8900C18EC3 /* Invoice Management Controllers */,
+				F8B19E981EAD099700C18EC3 /* Information Controllers */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -327,6 +305,7 @@
 		728D91011E952E1F00C45C8B /* Other Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */,
 				720A90C31E92B8F30043C82F /* PrintRenderer.swift */,
 				720A90C41E92B8F30043C82F /* InvoiceGenerator.swift */,
 				F81A996D1EAAB1CF0052CA1D /* Constants.swift */,
@@ -342,6 +321,43 @@
 				728D91561E8C959200B584AF /* Info.plist */,
 			);
 			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		F8B19E981EAD099700C18EC3 /* Information Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				726A74591E7DD68100F06C16 /* ACRepairViewController.swift */,
+				F8181F3D1E896B000043C3FB /* BatteryViewController.swift */,
+				726A746F1E7DF30D00F06C16 /* BGBrakeViewController.swift */,
+				72D429181E7F9E8900EDFA59 /* BGCoolingViewController.swift */,
+				72D4291A1E7F9F8700EDFA59 /* BGDrivelineViewController.swift */,
+				726A745B1E7DE0A800F06C16 /* BGFluidsViewController.swift */,
+				72E427B41E89341E0035B3F9 /* BGSteeringViewController.swift */,
+				72E427B21E8933CF0035B3F9 /* BGTransViewController.swift */,
+				72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */,
+				72491D491E845746007A5988 /* BGFuelServiceViewController.swift */,
+				F8181F3F1E896B9E0043C3FB /* DiagnosticsViewController.swift */,
+				F8181F411E896C280043C3FB /* ExhaustViewController.swift */,
+				720A90D51E92EAAE0043C82F /* LaunchScreenViewController.swift */,
+				72463E8F1E7DC34F00F355A9 /* ServicesViewController.swift */,
+				F8181F391E8962D80043C3FB /* TiresViewController.swift */,
+				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
+				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
+				F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */,
+				72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */,
+			);
+			name = "Information Controllers";
+			sourceTree = "<group>";
+		};
+		F8B19E9A1EAD0A8900C18EC3 /* Invoice Management Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				720A90C11E92B8F30043C82F /* AddItemViewController.swift */,
+				720A90C21E92B8F30043C82F /* CreatorViewController.swift */,
+				720A90C51E92B8F30043C82F /* InvoiceListViewController.swift */,
+				720A90C61E92B8F30043C82F /* PreviewViewController.swift */,
+			);
+			name = "Invoice Management Controllers";
 			sourceTree = "<group>";
 		};
 		F8DD993F1E4A564800DC3EB9 = {

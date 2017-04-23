@@ -80,6 +80,14 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         
         readName()
         // Do any additional setup after loading the view.
+        
+        
+        //.................TESTING.................\\
+
+        LoginController.currentUser.parsePaymentDates()
+        
+        //.................TESTING.................\\
+
     }
 
     override func didReceiveMemoryWarning() {
