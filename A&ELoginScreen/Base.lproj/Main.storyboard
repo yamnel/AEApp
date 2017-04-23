@@ -494,7 +494,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hhq-6s-byx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g6Q-tK-CMw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiamondPlateBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="upG-fW-j9Q">
@@ -525,7 +525,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3d-9X-WPz">
-                                <rect key="frame" x="16" y="343" width="343" height="507"/>
+                                <rect key="frame" x="16" y="343" width="343" height="324"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCG-yI-GXD">
                                         <rect key="frame" x="-16" y="0.0" width="375" height="400"/>
@@ -679,9 +679,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="iGa-Tr-5Qd" eventType="touchUpInside" id="veu-0o-Vdq"/>
-                                    <action selector="sendEmail:" destination="qCU-c9-RpA" eventType="touchUpInside" id="VX8-N1-pd8"/>
-                                    <action selector="sendPasswordReset:" destination="qCU-c9-RpA" eventType="touchUpInside" id="uoH-JW-SBr"/>
+                                    <action selector="sendPasswordReset:" destination="qCU-c9-RpA" eventType="touchUpInside" id="bKd-zt-OLo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Your Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChH-K3-t0v">
@@ -706,9 +704,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="iGa-Tr-5Qd" eventType="touchUpInside" id="ERr-jS-xz5"/>
-                                    <action selector="sendEmail:" destination="qCU-c9-RpA" eventType="touchUpInside" id="vQj-wk-iZY"/>
-                                    <action selector="setNewEmail:" destination="qCU-c9-RpA" eventType="touchUpInside" id="Jvf-dh-e90"/>
+                                    <action selector="setNewEmail:" destination="qCU-c9-RpA" eventType="touchUpInside" id="K4N-3p-iuo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set New Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHX-tH-pU8">
@@ -749,11 +745,12 @@
                         <outlet property="newEmailInput" destination="FRC-ON-fdn" id="2VZ-pQ-3bH"/>
                         <segue destination="iGa-Tr-5Qd" kind="show" identifier="backToLogin" id="son-du-zL3"/>
                         <segue destination="sia-N8-gSK" kind="show" identifier="backToMain" id="vhh-ku-gw6"/>
+                        <segue destination="iGa-Tr-5Qd" kind="show" identifier="loginSegue" id="4aI-Af-EHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rif-G7-J5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="337"/>
+            <point key="canvasLocation" x="2130" y="390"/>
         </scene>
         <!--Wheel Adjustment View Controller-->
         <scene sceneID="ljn-ak-OSX">
@@ -967,7 +964,7 @@ All of the elements that make your car go straight are called “alignment.” S
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7d-bU-r8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4302" y="-667"/>
+            <point key="canvasLocation" x="3833" y="-685"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="2r6-ym-CUl">
@@ -978,7 +975,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="9if-KR-nzb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r6l-sQ-1uE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiamondPlateBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wAa-Ex-yI8">
@@ -1251,7 +1248,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="v5L-aM-tow"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RIV-dK-T8P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqd-3n-8SU">
@@ -1270,7 +1267,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHi-hV-jSO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcD-BO-TwX">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="795"/>
@@ -1529,7 +1526,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="eol-5l-SMx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zhv-1E-YDk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93L-yx-UYB">
@@ -1546,7 +1543,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tow-US-B8G">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gH-SU-iqz">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="916"/>
@@ -1683,7 +1680,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="Pu3-T0-8IP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hjV-dv-XBR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IkF-hY-NxX">
@@ -1699,7 +1696,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdI-uX-kk1">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jze-Os-61R">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
@@ -1891,7 +1888,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="JY2-Pa-LdD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c8u-cC-5Zz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4p-ej-NtX">
@@ -1908,7 +1905,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chp-Px-T2o">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgF-qK-95t">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="933"/>
@@ -2043,7 +2040,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="Cgj-ht-9f8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ICy-lX-WpL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1j-XH-K6R">
@@ -2059,7 +2056,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Jj-md-Fy2">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GM9-v0-qH5">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="933"/>
@@ -2197,7 +2194,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="8J0-mn-2Gy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nx2-94-MH1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnM-wp-7wC">
@@ -2213,7 +2210,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wme-qB-KbJ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfY-b7-HK4">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="944"/>
@@ -2513,7 +2510,7 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="Bsj-Vo-jOY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eRr-6x-gUy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi5-NW-G4k">
@@ -2529,7 +2526,7 @@ All of the elements that make your car go straight are called “alignment.” S
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzx-fL-SYR">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtV-pT-pkx">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="919"/>
@@ -2671,11 +2668,11 @@ All of the elements that make your car go straight are called “alignment.” S
                         <viewControllerLayoutGuide type="bottom" id="6wo-bp-mqe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="why-KH-gDO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEm-Tr-jqz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PQ-RR-wUg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="754"/>
@@ -2760,7 +2757,7 @@ Replacing old refrigerant has another benefit: refrigerant tends to gather moist
                         <viewControllerLayoutGuide type="bottom" id="vg5-cy-SVj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GhV-ZF-2WQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8F1-OG-24e">
@@ -2776,7 +2773,7 @@ Replacing old refrigerant has another benefit: refrigerant tends to gather moist
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGa-W2-MpX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSl-0v-krk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="499"/>
@@ -2854,7 +2851,7 @@ Replacing old refrigerant has another benefit: refrigerant tends to gather moist
                         <viewControllerLayoutGuide type="bottom" id="4lM-Hi-Zwd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iqR-kV-oaA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIf-Td-03W">
@@ -2870,7 +2867,7 @@ Replacing old refrigerant has another benefit: refrigerant tends to gather moist
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l28-st-Oam">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdH-AP-lK7">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="535"/>
@@ -2941,7 +2938,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                         <viewControllerLayoutGuide type="bottom" id="0sP-Mv-Blt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="spc-vW-gXA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90a-OC-OTA">
@@ -2996,7 +2993,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                         <viewControllerLayoutGuide type="bottom" id="U96-cV-aWg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qyv-65-sGK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiamondPlateBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mcs-RJ-hlZ">
@@ -3138,7 +3135,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yob-bd-fa6" id="J7E-pc-dpP">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WpO-MB-a8z">
@@ -3323,7 +3320,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                                         <rect key="frame" x="0.0" y="28" width="383" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="flF-ht-Mqe" id="Oyz-9f-Leh">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -3387,7 +3384,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                         <viewControllerLayoutGuide type="bottom" id="Dg5-6I-YqQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YpZ-BR-9zS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09k-39-u3w">
@@ -3403,7 +3400,7 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTZ-1L-Oyp">
-                                <rect key="frame" x="0.0" y="64" width="375" height="786"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-v7-z1k">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
@@ -3530,11 +3527,11 @@ Trying to diagnose today's vehicles without the proper training and diagnostic e
         <image name="mail-icon.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v3O-gc-Cj7"/>
         <segue reference="ZXB-eO-Uge"/>
-        <segue reference="qe5-bK-uiQ"/>
+        <segue reference="v3O-gc-Cj7"/>
         <segue reference="Ac4-nZ-Rfo"/>
-        <segue reference="Hqx-w3-x91"/>
         <segue reference="vYi-df-wYH"/>
+        <segue reference="son-du-zL3"/>
+        <segue reference="vhh-ku-gw6"/>
     </inferredMetricsTieBreakers>
 </document>
