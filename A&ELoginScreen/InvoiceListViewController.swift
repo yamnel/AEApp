@@ -125,7 +125,7 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         SELECTED_PAYMENT_DATE = LoginController.currentUser.listOfPaymentDates[indexPath.row]
-        print(SELECTED_PAYMENT_DATE)
+        //print(SELECTED_PAYMENT_DATE)
         LoginController.currentUser.parseItems()
         
         

@@ -39,7 +39,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
             
             let lastName = value?["lastName"] as? String ?? ""
             
-//            self.nameLabel.text = firstName + " " + lastName
+            self.nameLabel.text = firstName + " " + lastName
 
         }) { (error) in
             print(error.localizedDescription)

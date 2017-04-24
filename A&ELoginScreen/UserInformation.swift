@@ -41,6 +41,7 @@ class UserInformation{
         
         // get the all te car's info
         self.carInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.carInfoFileName).json"
+        print(AppDelegate.getAppDelegate().getDocDir())
         self.getUserCarInfo{ info in
             self.carInfoData = info
             let str = self.carInfoData.description
