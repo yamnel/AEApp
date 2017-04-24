@@ -57,6 +57,7 @@ PODS:
   - OneSignal (2.4.2)
   - pop (1.0.9)
   - Protobuf (3.2.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - OneSignal (~> 2.0)
   - pop (~> 1.0)
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -84,7 +86,8 @@ SPEC CHECKSUMS:
   OneSignal: a94d1ca53d05c29de4f4b150bad8ff9c4cc34f67
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: d11fc76b3f20139300f7a1f1f01d84c15c788228
+PODFILE CHECKSUM: 73faa4ff08052d3ba83fe5397ac06325359e857a
 
 COCOAPODS: 1.2.0

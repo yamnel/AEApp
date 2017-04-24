@@ -22,8 +22,17 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     var firstAppeared = true
     
     var nextNumberAsString: String!
+    // TESTING \\
     
     
+    var invoiceDate: String!
+    
+    
+    
+    
+    
+    // TESTING \\
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +44,9 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Add a tap gesture recognizer to the view to dismiss the keyboard.
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
+        
+        items.append(LoginController.currentUser.parseOrderLabor())
+        
     }
 
     
@@ -161,6 +173,7 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (items != nil) ? items.count : 0
+//        return LoginController.currentUser.listOfPaymentDates.count
     }
     
     

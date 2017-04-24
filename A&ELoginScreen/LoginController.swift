@@ -62,10 +62,25 @@ class LoginController: UIViewController {
         }
     }
     
+    
+    //.................TESTING.................\\
+    static var currentUser: UserInformation!
+    
+    
+    //.................TESTING.................\\
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        //.................TESTING.................\\
+        LoginController.currentUser = UserInformation()
+        
+//        self.currentUser = UserInformation()
+//        self.currentUser.parsePaymentDates()
+//       print(currentUser.listOfPaymentDates)
+        
+        //.................TESTING.................\\
+
     }
 
     override func didReceiveMemoryWarning() {
