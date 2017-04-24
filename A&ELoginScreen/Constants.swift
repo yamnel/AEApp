@@ -9,7 +9,8 @@
 import Foundation
 import SwiftyJSON
 
-let API_KEY: String = "065dce537ae7be843043e8938b77dfc27f48cfe9bd3fc3daa0769065e70f7ef0"
+//let API_KEY: String = "065dce537ae7be843043e8938b77dfc27f48cfe9bd3fc3daa0769065e70f7ef0"
+let API_KEY: String = "36d4d98adf2d4f627e3d4fdef04f5fbc0e38a263b3f08db6b3f249f7b36010fe"
 
 let CUSTOMER_TABLE = "SM.Customer"
 let VEHICLE_TABLE = "vappvehicles"
@@ -31,9 +32,11 @@ var TOTAL_PAYMENT: String!
 
 
 
-let URL_STRING: String = "http://localhost:8080/api/v2/shopdb/_table/"
+//let URL_STRING: String = "http://localhost:8080/api/v2/shopdb/_table/"
+let URL_STRING: String = "http://192.168.50.50:8080/api/v2/shopdb/_table/"
 
-let USER_ID: String = "1989"
+
+let USER_ID: String = "140"
 
 typealias DownloadComplete = (_ json: JSON?) -> (Void)
 typealias LaborDownloadComplete = (_ json: JSON?) -> (Void)

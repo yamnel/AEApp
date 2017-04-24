@@ -78,39 +78,39 @@ class UserInformation{
     
     
     
-//    func parseOrderLabor() -> [String:String]{
-//        var ret: [String:String]!
-//        var description: [String] = []
-//        var cost:[String] = []
-//        
-//        var jsondict:Dictionary<String, AnyObject>!
-//        var jsonData: Data!
-//        do{
-//            let url = URL(fileURLWithPath: self.orderLaborInfoPath)
-//            jsonData = try Data(contentsOf: url)
-//            jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
-//            
-//            
-//        }catch{
-//            
-//        }
-//        
-//        
-//        //        print("TESTING  \(jsondict)") // TESTING \\
-//        let orderLaborList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
-//        
-//        for var info in orderLaborList{
-//            description.append(info["Description"]! as! String)
-//            cost.append(String(info["Sale"]! as! Int))
-//            
-//        }
-//        
-//        for var i in 0..<description.count{
-//            ret[description[i]] = cost[i]
-//        }
-//        
-//        return ret
-//    }
+    func parseOrderLabor() -> [String:String]{
+        var ret: [String:String]!
+        var description: [String] = []
+        var cost:[String] = []
+        
+        var jsondict:Dictionary<String, AnyObject>!
+        var jsonData: Data!
+        do{
+            let url = URL(fileURLWithPath: self.orderLaborInfoPath)
+            jsonData = try Data(contentsOf: url)
+            jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
+            
+            
+        }catch{
+            
+        }
+        
+        
+        //        print("TESTING  \(jsondict)") // TESTING \\
+        let orderLaborList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
+        
+        for var info in orderLaborList{
+            description.append(info["Description"]! as! String)
+            cost.append(String(info["Sale"]! as! Int))
+            
+        }
+        
+        for var i in 0..<description.count{
+            ret[description[i]] = cost[i]
+        }
+        
+        return ret
+    }
     
     
     
