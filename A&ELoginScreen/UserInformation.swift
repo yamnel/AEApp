@@ -19,7 +19,7 @@ class UserInformation{
 //    var paymentDatesInfoPath: String!
     var paymentDatesInfoData: JSON!
     
-    var paymentDatesInfoPath: String = "\(AppDelegate.getAppDelegate().getDocDir())/user_payment_info.json"
+    var paymentDatesInfoPath: String!// = "\(AppDelegate.getAppDelegate().getDocDir())/user_payment_info.json"
     
     var orderPartsInfoPath: String = "\(AppDelegate.getAppDelegate().getDocDir())/user_order_parts_info.json"
     var orderPartsInfoData: JSON!
@@ -41,6 +41,7 @@ class UserInformation{
         
         // get the all te car's info
         self.carInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.carInfoFileName).json"
+        print(AppDelegate.getAppDelegate().getDocDir())
         self.getUserCarInfo{ info in
             self.carInfoData = info
             let str = self.carInfoData.description
@@ -54,7 +55,10 @@ class UserInformation{
         
         
         // get all the order dates
-//        self.paymentDatesInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.paymentDatesInfoFileName).json"
+        self.paymentDatesInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/user_payment_info.json"
+        print(self.paymentDatesInfoPath)
+        print(" ")
+        print(" ")
         self.getUserOrderDateInfo{ info in
             self.paymentDatesInfoData = info
             print("The paymentInfo is \(self.paymentDatesInfoData)") //TESTING\\
