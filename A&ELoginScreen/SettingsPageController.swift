@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class SettingsPageController: UIViewController {
@@ -33,29 +34,37 @@ class SettingsPageController: UIViewController {
                 self.present(resetFailureAlertController, animated: true, completion: nil)
             } else {
                 //reset succeeded
+                var ref: FIRDatabaseReference! = FIRDatabase.database().reference()
+                ref = FIRDatabase.database().reference()
+                
+                //update fields
+                ref.child("users").child((self.user?.uid)!).updateChildValues(["email" : self.newEmailInput.text!])
+                
                 //Creates a UIAlertController which tell the user that the reset succeeded
                 let resetSuccessAlertController = UIAlertController(title: "Success!", message:
                     "A confirmation message has been sent to your email address!", preferredStyle: UIAlertControllerStyle.alert)
                 
                 //Specifies the text and behavior of the button attached to the UIAlertController
-                resetSuccessAlertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: {(alert: UIAlertAction!) in
-                    
+                resetSuccessAlertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
+                
+                
+                self.performSegue(withIdentifier: "backToMain", sender: self)
                     //Checks to make sure that the user is signed in
-                    FIRAuth.auth()?.addStateDidChangeListener { auth, user in
-                        if user != nil {
-                            // User is signed in, and is therefore
-                            // redirected to the main menu
-                            
-                            self.performSegue(withIdentifier: "backToMain", sender: self)
-                        } else {
-                            // No user is signed in, so the user is
-                            // Redirected to the login screen to do so
-                            
-                            self.performSegue(withIdentifier: "backToLogin", sender: self)
-                        }
-                    }
+        //             FIRAuth.auth()?.addStateDidChangeListener { auth, user in
+        //                 if user != nil {
+        //                     // User is signed in, and is therefore
+        //                     // redirected to the main menu
+        //
+        //                    self.performSegue(withIdentifier: "backToMain", sender: self)
+        //                 } else {
+        //                     // No user is signed in, so the user is
+        //                   // Redirected to the login screen to do so
+        //
+        //               self.performSegue(withIdentifier: "backToLogin", sender: self)
+        //         }
+        //   }
                     
-                }))
+              //  }))
 
                 //Causes the UIAlertController to pop up on screen
                 self.present(resetSuccessAlertController, animated: true, completion: nil)
