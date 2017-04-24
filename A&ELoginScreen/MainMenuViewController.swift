@@ -84,7 +84,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         
         //.................TESTING.................\\
 
-        LoginController.currentUser.parsePaymentDates()
+         LoginController.currentUser.parsePaymentDates()
         
         //.................TESTING.................\\
 
