@@ -72,11 +72,11 @@ class InvoiceGenerator: NSObject {
             
             // For all the items except for the last one we'll use the "single_item.html" template.
             // For the last one we'll use the "last_item.html" template.
-            for i in 0..<items.count {
+            for i in 0..<ITEM_LIST.count {
                 var itemHTMLContent: String!
                 
                 // Determine the proper template file.
-                if i != items.count - 1 {
+                if i != ITEM_LIST.count - 1 {
                     itemHTMLContent = try String(contentsOfFile: singleItemTemplatePath!)
                 }
                 else {
@@ -84,11 +84,12 @@ class InvoiceGenerator: NSObject {
                 }
                 
                 // Replace the description and price placeholders with the actual values.
-//                itemHTMLContent = itemHTMLContent.replacingOccurrences(of: "#ITEM_DESC#", with: items[i]["item"]!)
+                print(ITEM_LIST[i]["Description"]!)
+                itemHTMLContent = itemHTMLContent.replacingOccurrences(of: "#ITEM_DESC#", with: ITEM_LIST[i]["Description"]!)
                 
                 // Format each item's price as a currency value.
 //                let formattedPrice = AppDelegate.getAppDelegate().getStringValueFormattedAsCurrency(items[i]["price"]!)
-//                itemHTMLContent = itemHTMLContent.replacingOccurrences(of: "#PRICE#", with: formattedPrice)
+                itemHTMLContent = itemHTMLContent.replacingOccurrences(of: "#PRICE#", with: ITEM_LIST[i]["Cost"]!)
                 
                 // Add the item's HTML code to the general items string.
                 allItems += itemHTMLContent
@@ -121,7 +122,7 @@ class InvoiceGenerator: NSObject {
         //Hard-coded file name for testing purposes
 //        pdfFilename = "\(AppDelegate.getAppDelegate().getDocDir())/Invoice.pdf"
         
-        pdfDirectory = "\(AppDelegate.getAppDelegate().getDocDir())/Invoice \(invoiceNumber!).pdf"
+        pdfDirectory = "\(AppDelegate.getAppDelegate().getDocDir())/Invoice \(SELECTED_PAYMENT_DATE).pdf"
         newPDF?.write(toFile: pdfDirectory, atomically: true)
         
         print(pdfDirectory)

@@ -16,11 +16,12 @@ class UserInformation{
     var carInfoData: JSON!
     var carInfoFileName: String = "user_car_info"
     
-    var paymentDatesInfoPath: String!
+//    var paymentDatesInfoPath: String!
     var paymentDatesInfoData: JSON!
-    var paymentDatesInfoFileName: String = "user_payment_info"
     
-    var orderPartsInfoPath: String!
+    var paymentDatesInfoPath: String = "\(AppDelegate.getAppDelegate().getDocDir())/user_payment_info.json"
+    
+    var orderPartsInfoPath: String = "\(AppDelegate.getAppDelegate().getDocDir())/user_order_parts_info.json"
     var orderPartsInfoData: JSON!
     var orderPartsInfoFileName: String = "user_order_parts_info"
     
@@ -30,7 +31,14 @@ class UserInformation{
     
     var listOfPaymentDates: [String] =  []
     
+    // holds the items
+    
+    
+    
     init(){
+        
+        
+        
         // get the all te car's info
         self.carInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.carInfoFileName).json"
         self.getUserCarInfo{ info in
@@ -46,14 +54,13 @@ class UserInformation{
         
         
         // get all the order dates
-        self.paymentDatesInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.paymentDatesInfoFileName).json"
+//        self.paymentDatesInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.paymentDatesInfoFileName).json"
         self.getUserOrderDateInfo{ info in
             self.paymentDatesInfoData = info
-//            print("The paymentInfo is \(self.paymentDatesInfoData)") //TESTING\\
+            print("The paymentInfo is \(self.paymentDatesInfoData)") //TESTING\\
             
             let str = self.paymentDatesInfoData.description
-//            print(str) // TESTING \\
-            
+            print(str) // TESTING \\
             do{
                 try str.write(toFile: self.paymentDatesInfoPath, atomically: false, encoding: String.Encoding.utf8)
             } catch{
@@ -62,6 +69,8 @@ class UserInformation{
         }
         
     }
+    
+    
     
     
     
@@ -97,29 +106,48 @@ class UserInformation{
         }
         
         return ret
-        
-        
     }
     
+    
     func parsePaymentDates(){
-        var jsondict:Dictionary<String, AnyObject>!
+        var jsondict: Dictionary<String, AnyObject>!
         var jsonData: Data!
         do{
             let url = URL(fileURLWithPath: self.paymentDatesInfoPath)
             jsonData = try Data(contentsOf: url)
             jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
-
             
         }catch{
             
         }
         
-        
-//        print("TESTING  \(jsondict)") // TESTING \\
         let orderDateList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
         
         for var dateInfo in orderDateList{
             self.listOfPaymentDates.append(dateInfo["PaymentDate"]! as! String)
+        }
+        
+    }
+
+    
+    func parseItems(){
+        var jsondict: Dictionary<String, AnyObject>!
+        var jsonData: Data!
+        do{
+            let url = URL(fileURLWithPath: self.orderPartsInfoPath)
+            jsonData = try Data(contentsOf: url)
+            jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
+            
+        }catch{
+            
+        }
+        
+        let orderpartsList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
+        
+        for var job in orderpartsList{
+            let desc = job["Description"] as! String
+            let cost = String(job["Cost"] as! Int)
+            ITEM_LIST.append(["Description": desc, "Cost": cost])
         }
 
     }
@@ -136,10 +164,12 @@ class UserInformation{
             }
         }
     }
+    
 
     
-    func getUserOrderPartsInfo(completed: @escaping DownloadComplete, paymentDate: String){
-        let userGeneralInfoURL = URL(string: "\(URL_STRING)\(ORDER_PARTS_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)&filter=PaymentDate='\(paymentDate)'")!
+    func getUserOrderPartsInfo(completed: @escaping DownloadComplete ){
+        
+        let userGeneralInfoURL = URL(string: "\(URL_STRING)\(ORDER_PARTS_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)&filter=PaymentDate='\(CLEAN_PAYMENT_DATE)'")!
         Alamofire.request(userGeneralInfoURL).validate().responseJSON { response in
             do{
                 let json = JSON(data: response.data!)
@@ -161,6 +191,7 @@ class UserInformation{
             }
         }
     }
+    
     
     func getUserCarInfo(completed: @escaping DownloadComplete){
         let userGeneralInfoURL = URL(string: "\(URL_STRING)\(VEHICLE_TABLE)?api_key=\(API_KEY)&filter=CustId=\(USER_ID)")!

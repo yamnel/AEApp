@@ -7,7 +7,7 @@ class PreviewViewController: UIViewController {
 
     @IBOutlet weak var webPreview: UIWebView!
     
-    var invoiceInfo: [String: AnyObject] = [:]
+    var invoiceInfo: [String: AnyObject]!
     
     //testing\\
     
@@ -35,7 +35,8 @@ class PreviewViewController: UIViewController {
         
         LoginController.currentUser.getUserOrderLaborInfo { info in
             LoginController.currentUser.orderLaborInfoData = info
-            print("The paymentInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
+            
+            print("The LaborInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
             
             let str = LoginController.currentUser.orderLaborInfoData.description
             //            print(str) // TESTING \\
@@ -48,6 +49,25 @@ class PreviewViewController: UIViewController {
             }
         }
         
+        
+        
+        LoginController.currentUser.orderPartsInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderPartsInfoFileName).json"
+        LoginController.currentUser.getUserOrderPartsInfo { info in
+            LoginController.currentUser.orderPartsInfoData = info
+            
+            print("The PartsInfo is \(LoginController.currentUser.orderPartsInfoData)") //TESTING\\
+            
+            let str = LoginController.currentUser.orderPartsInfoData.description
+            //            print(str) // TESTING \\
+            
+            do{
+                try str.write(toFile: LoginController.currentUser.orderPartsInfoPath, atomically: false, encoding: String.Encoding.utf8)
+                
+            } catch{
+                print("Could not write to file")
+            }
+        }
+
         // TESTING \\
         
     }
@@ -60,6 +80,11 @@ class PreviewViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
+        //TESTING\\
+        
+        
+        
+        //TESTING\\
         
         createInvoice()
     }
@@ -80,7 +105,7 @@ class PreviewViewController: UIViewController {
         
         let fileManager = FileManager.default
         
-        let pdfPath = (self.getDirectoryPath() as NSString).appendingPathComponent("Invoice \(invoiceInfo["invoiceNumber"] as! String).pdf")
+        let pdfPath = (self.getDirectoryPath() as NSString).appendingPathComponent("Invoice \(SELECTED_PAYMENT_DATE).pdf")
         
         if fileManager.fileExists(atPath: pdfPath){
 
@@ -127,7 +152,7 @@ class PreviewViewController: UIViewController {
         if let invoiceHTML = invGenerator.renderInvoice(invoiceNumber: SELECTED_PAYMENT_DATE,
                                                            invoiceDate: SELECTED_PAYMENT_DATE,
                                                            recipientInfo: "",
-                                                           items: invoiceInfo["items"] as! [[String : String]],
+                                                           items: ITEM_LIST ,
                                                            totalAmount: "1000") {
             
             webPreview.loadHTMLString(invoiceHTML, baseURL: NSURL(string: invGenerator.invoiceTemplatePath!)! as URL)

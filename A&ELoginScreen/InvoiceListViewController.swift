@@ -48,7 +48,7 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         if let identifier = segue.identifier {
             if identifier == "idSeguePresentPreview" {
                 let previewViewController = segue.destination as! PreviewViewController
-                previewViewController.invoiceInfo["items"] = [["":""]] as AnyObject
+//                previewViewController.invoiceInfo["items"] = ITEM_LIST as? AnyObject
             }
         }
     }
@@ -126,6 +126,7 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         SELECTED_PAYMENT_DATE = LoginController.currentUser.listOfPaymentDates[indexPath.row]
         print(SELECTED_PAYMENT_DATE)
+        LoginController.currentUser.parseItems()
         
         
         selectedInvoiceIndex = (indexPath as NSIndexPath).row

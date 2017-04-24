@@ -20,9 +20,13 @@ let ORDER_PARTS_TABLE = "vappparts"
 
 var SELECTED_PAYMENT_DATE: String!
 
-var CLEAN_PAYMENT_DATE:String{
+
+var CLEAN_PAYMENT_DATE: String{
     return SELECTED_PAYMENT_DATE.replacingOccurrences(of: " ", with: "%20").replacingOccurrences(of: ":", with: "%3A")
 }
+
+var ITEM_LIST =  [[String:String]]()
+var TOTAL_PAYMENT: String!
 
 
 
