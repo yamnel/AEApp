@@ -1,6 +1,8 @@
 
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -17,6 +19,8 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         
         tblInvoices.delegate = self
         tblInvoices.dataSource = self
+        
+        
     }
 
     
@@ -44,7 +48,7 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         if let identifier = segue.identifier {
             if identifier == "idSeguePresentPreview" {
                 let previewViewController = segue.destination as! PreviewViewController
-                previewViewController.invoiceInfo = invoices[selectedInvoiceIndex]
+//                previewViewController.invoiceInfo["items"] = ITEM_LIST as? AnyObject
             }
         }
     }
@@ -97,7 +101,8 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (invoices != nil) ? invoices.count : 0
+        
+        return LoginController.currentUser.listOfPaymentDates.count
     }
     
     
@@ -108,8 +113,7 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
             cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "invoiceCell")
         }
         
-        cell.textLabel?.text = "\(invoices[(indexPath as NSIndexPath).row]["invoiceNumber"] as! String) - \(invoices[(indexPath as NSIndexPath).row]["invoiceDate"] as! String) - \(invoices[(indexPath as NSIndexPath).row]["totalAmount"] as! String)"
-        
+        cell.textLabel?.text = LoginController.currentUser.listOfPaymentDates[indexPath.row]
         return cell
     }
     
@@ -120,6 +124,11 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SELECTED_PAYMENT_DATE = LoginController.currentUser.listOfPaymentDates[indexPath.row]
+        print(SELECTED_PAYMENT_DATE)
+        LoginController.currentUser.parseItems()
+        
+        
         selectedInvoiceIndex = (indexPath as NSIndexPath).row
         performSegue(withIdentifier: "idSeguePresentPreview", sender: self)
     }

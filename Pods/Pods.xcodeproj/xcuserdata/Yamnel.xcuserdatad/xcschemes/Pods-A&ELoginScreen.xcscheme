@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "725EC0047B9AF8D8CAA2C15DDE441551"
+               BlueprintIdentifier = "61BE5B4F477BB91ABBF1B887DF0A53F9"
                BuildableName = "Pods_A_ELoginScreen.framework"
                BlueprintName = "Pods-A&amp;ELoginScreen"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "725EC0047B9AF8D8CAA2C15DDE441551"
+            BlueprintIdentifier = "61BE5B4F477BB91ABBF1B887DF0A53F9"
             BuildableName = "Pods_A_ELoginScreen.framework"
             BlueprintName = "Pods-A&amp;ELoginScreen"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "725EC0047B9AF8D8CAA2C15DDE441551"
-            BuildableName = "Pods_A_ELoginScreen.framework"
-            BlueprintName = "Pods-A&amp;ELoginScreen"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
