@@ -106,6 +106,7 @@ class InvoiceGenerator: NSObject {
         }
         
         return nil
+        
     }
     
     func exportToPDF(HTMLContent: String) {
