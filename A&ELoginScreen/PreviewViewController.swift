@@ -29,44 +29,44 @@ class PreviewViewController: UIViewController {
         
         // TESTING \\
         
-        
-        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
-        //        print(LoginController.currentUser.orderLaborInfoPath)
-        
-        LoginController.currentUser.getUserOrderLaborInfo { info in
-            LoginController.currentUser.orderLaborInfoData = info
-            
-            print("The LaborInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
-            
-            let str = LoginController.currentUser.orderLaborInfoData.description
-            //            print(str) // TESTING \\
-            
-            do{
-                try str.write(toFile: LoginController.currentUser.orderLaborInfoPath, atomically: false, encoding: String.Encoding.utf8)
-                
-            } catch{
-                print("Could not write to file")
-            }
-        }
-        
-        
-        
-        LoginController.currentUser.orderPartsInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderPartsInfoFileName).json"
-        LoginController.currentUser.getUserOrderPartsInfo { info in
-            LoginController.currentUser.orderPartsInfoData = info
-            
-            print("The PartsInfo is \(LoginController.currentUser.orderPartsInfoData)") //TESTING\\
-            
-            let str = LoginController.currentUser.orderPartsInfoData.description
-            //            print(str) // TESTING \\
-            
-            do{
-                try str.write(toFile: LoginController.currentUser.orderPartsInfoPath, atomically: false, encoding: String.Encoding.utf8)
-                
-            } catch{
-                print("Could not write to file")
-            }
-        }
+//        
+//        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
+//        //        print(LoginController.currentUser.orderLaborInfoPath)
+//        
+//        LoginController.currentUser.getUserOrderLaborInfo { info in
+//            LoginController.currentUser.orderLaborInfoData = info
+//            
+//            print("The LaborInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
+//            
+//            let str = LoginController.currentUser.orderLaborInfoData.description
+//            //            print(str) // TESTING \\
+//            
+//            do{
+//                try str.write(toFile: LoginController.currentUser.orderLaborInfoPath, atomically: false, encoding: String.Encoding.utf8)
+//                
+//            } catch{
+//                print("Could not write to file")
+//            }
+//        }
+//        
+//        
+//        
+//        LoginController.currentUser.orderPartsInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderPartsInfoFileName).json"
+//        LoginController.currentUser.getUserOrderPartsInfo { info in
+//            LoginController.currentUser.orderPartsInfoData = info
+//            
+//            print("The PartsInfo is \(LoginController.currentUser.orderPartsInfoData)") //TESTING\\
+//            
+//            let str = LoginController.currentUser.orderPartsInfoData.description
+//            //            print(str) // TESTING \\
+//            
+//            do{
+//                try str.write(toFile: LoginController.currentUser.orderPartsInfoPath, atomically: false, encoding: String.Encoding.utf8)
+//                
+//            } catch{
+//                print("Could not write to file")
+//            }
+//        }
 
         // TESTING \\
         
@@ -146,14 +146,20 @@ class PreviewViewController: UIViewController {
 //    }
     
     func createInvoice() {
-
+        
+        //TESTING\\
+        
+        
+        LoginController.currentUser.parseItems()
+        
+        //TESTING\\
         invGenerator = InvoiceGenerator()
 
         if let invoiceHTML = invGenerator.renderInvoice(invoiceNumber: SELECTED_PAYMENT_DATE,
                                                            invoiceDate: SELECTED_PAYMENT_DATE,
                                                            recipientInfo: "",
                                                            items: ITEM_LIST ,
-                                                           totalAmount: "1000") {
+                                                           totalAmount: TOTAL_PAYMENT) {
             
             webPreview.loadHTMLString(invoiceHTML, baseURL: NSURL(string: invGenerator.invoiceTemplatePath!)! as URL)
 

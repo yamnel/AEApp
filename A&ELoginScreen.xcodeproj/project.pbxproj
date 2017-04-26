@@ -84,6 +84,7 @@
 		F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DD994F1E4A564800DC3EB9 /* Main.storyboard */; };
 		F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DD99521E4A564800DC3EB9 /* Assets.xcassets */; };
 		F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */; };
+		F8F63E691EAEDA3F00B5080A /* exhaust-icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F63E681EAEDA3F00B5080A /* exhaust-icon copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		F8DD99521E4A564800DC3EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8DD99551E4A564800DC3EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8DD99571E4A564800DC3EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F63E681EAEDA3F00B5080A /* exhaust-icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exhaust-icon copy.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F8F63E681EAEDA3F00B5080A /* exhaust-icon copy.png */,
 				72222C4E1EAA6B5B0091EE4F /* CarCareOneLogo.png */,
 				7265434B1EA675A300AF5092 /* Exhaust-Image.jpg */,
 				72C249B71E9D79940067A3A8 /* DiamondPlateBackground.jpg */,
@@ -516,6 +519,7 @@
 				72222C4F1EAA6B5B0091EE4F /* CarCareOneLogo.png in Resources */,
 				72463EA41E7DCFDB00F355A9 /* Diagnostics Icon Update.png in Resources */,
 				72463EA31E7DCFDB00F355A9 /* AC Icon Update.png in Resources */,
+				F8F63E691EAEDA3F00B5080A /* exhaust-icon copy.png in Resources */,
 				72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */,
 				72463EA51E7DCFDB00F355A9 /* Tires Icon Update.png in Resources */,
 				7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */,

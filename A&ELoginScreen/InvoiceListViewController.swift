@@ -20,7 +20,11 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         tblInvoices.delegate = self
         tblInvoices.dataSource = self
         
+        // TESTING \\
+        LoginController.currentUser.parsePaymentDates()
+        print(LoginController.currentUser.listOfPaymentDates)
         
+        // TESTING \\
     }
 
     
@@ -126,8 +130,56 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         SELECTED_PAYMENT_DATE = LoginController.currentUser.listOfPaymentDates[indexPath.row]
         //print(SELECTED_PAYMENT_DATE)
-        LoginController.currentUser.parseItems()
         
+        // TESTING \\
+        
+        
+        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
+        //        print(LoginController.currentUser.orderLaborInfoPath)
+        
+        LoginController.currentUser.getUserOrderLaborInfo { info in
+            LoginController.currentUser.orderLaborInfoData = info
+            
+            print("The LaborInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
+            
+            let str = LoginController.currentUser.orderLaborInfoData.description
+            //            print(str) // TESTING \\
+            
+            do{
+                try str.write(toFile: LoginController.currentUser.orderLaborInfoPath, atomically: false, encoding: String.Encoding.utf8)
+                
+            } catch{
+                print("Could not write to file")
+            }
+        }
+        
+        
+        
+//        LoginController.currentUser.orderPartsInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderPartsInfoFileName).json"
+        
+        LoginController.currentUser.getUserOrderPartsInfo { info in
+            LoginController.currentUser.orderPartsInfoData = info
+            
+            print("The PartsInfo is \(LoginController.currentUser.orderPartsInfoData)") //TESTING\\
+            
+            let str = LoginController.currentUser.orderPartsInfoData.description
+            //            print(str) // TESTING \\
+            
+            do{
+                try str.write(toFile: LoginController.currentUser.orderPartsInfoPath, atomically: false, encoding: String.Encoding.utf8)
+                
+            } catch{
+                print("Could not write to file")
+            }
+        }
+        
+        // TESTING \\
+
+//        do{
+////            try LoginController.currentUser.parseItems()
+//        }catch{
+//            print("NOPE!")
+//        }
         
         selectedInvoiceIndex = (indexPath as NSIndexPath).row
         performSegue(withIdentifier: "idSeguePresentPreview", sender: self)
