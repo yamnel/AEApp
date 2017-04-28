@@ -37,8 +37,6 @@ class UserInformation{
     
     init(){
         
-        
-        
         // get the all te car's info
         self.carInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/\(self.carInfoFileName).json"
         print(AppDelegate.getAppDelegate().getDocDir())
@@ -111,7 +109,9 @@ class UserInformation{
     }
     
     
+    
     func parsePaymentDates(){
+        print("Parse PAYMENTS\n\n")
         var jsondict: Dictionary<String, AnyObject>!
         var jsonData: Data!
         do{
@@ -134,24 +134,31 @@ class UserInformation{
 
     
     func parseItems(){
+        print("Parse ITEMS")
         var jsondict: Dictionary<String, AnyObject>!
         var jsonData: Data!
         do{
             let url = URL(fileURLWithPath: self.orderPartsInfoPath)
             jsonData = try Data(contentsOf: url)
             jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
-            
+            print(jsondict)
         }catch{
             
         }
         
         let orderpartsList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
         
+        ITEM_LIST.removeAll(keepingCapacity: false)
+        
         for var job in orderpartsList{
             let desc = job["Description"] as! String
             let cost = String(job["Cost"] as! Int)
             ITEM_LIST.append(["Description": desc, "Cost": cost])
+            TOTAL_PAYMENT = String(job["TotalPayment"] as! Int)
+            
         }
+        
+       
 
     }
     
