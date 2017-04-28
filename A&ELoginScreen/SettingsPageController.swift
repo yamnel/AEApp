@@ -13,6 +13,7 @@ import FirebaseAuth
 class SettingsPageController: UIViewController {
     
     let user = FIRAuth.auth()?.currentUser
+    
     var credential: FIRAuthCredential?
     
     //User input used to reset password
@@ -21,10 +22,15 @@ class SettingsPageController: UIViewController {
     //User input for desired new email
     @IBOutlet weak var newEmailInput: UITextField!
     
+    /*
+     * Function allows the user to set a new email to be
+     * associated with their account
+     */
     @IBAction func setNewEmail(_ sender: Any) {
         
         user?.updateEmail(newEmailInput.text!) { (error) in
             if error != nil {
+                
                 //reset failed
                 let resetFailureAlertController = UIAlertController(title: "Email update FAILED", message: error?.localizedDescription, preferredStyle:UIAlertControllerStyle.alert)
                 
@@ -47,32 +53,20 @@ class SettingsPageController: UIViewController {
                 //Specifies the text and behavior of the button attached to the UIAlertController
                 resetSuccessAlertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
                 
-                
                 self.performSegue(withIdentifier: "backToMain", sender: self)
-                    //Checks to make sure that the user is signed in
-        //             FIRAuth.auth()?.addStateDidChangeListener { auth, user in
-        //                 if user != nil {
-        //                     // User is signed in, and is therefore
-        //                     // redirected to the main menu
-        //
-        //                    self.performSegue(withIdentifier: "backToMain", sender: self)
-        //                 } else {
-        //                     // No user is signed in, so the user is
-        //                   // Redirected to the login screen to do so
-        //
-        //               self.performSegue(withIdentifier: "backToLogin", sender: self)
-        //         }
-        //   }
-                    
-              //  }))
 
                 //Causes the UIAlertController to pop up on screen
-                self.present(resetSuccessAlertController, animated: true, completion: nil)
-                
+                self.present(resetSuccessAlertController, animated: true, completion: nil) 
             }
         }
     }
     
+    /*
+     * Function allows the user to set a new password to be
+     * associated with their account, which is accomplished
+     * by a password reset sent to the user at the
+     * completion of this function
+     */
     @IBAction func sendPasswordReset(_ sender: Any) {
         
         //Native Firebase function to reset user's password via reset email
@@ -114,11 +108,9 @@ class SettingsPageController: UIViewController {
                             self.performSegue(withIdentifier: "backToLogin", sender: self)
                         }
                     }
-                    
                 }))
                 //Causes the UIAlertController to pop up on screen
                 self.present(resetSuccessAlertController, animated: true, completion: nil)
-                
             }
         })
     }

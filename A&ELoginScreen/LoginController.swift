@@ -54,11 +54,7 @@ class LoginController: UIViewController {
                         self.present(loginFailureAlertController, animated: true, completion: nil)
                     }
                     
-//            let credential = FIREmailPasswordAuthProvider.credential(withEmail: email, password: password)
-                    
             self.performSegue(withIdentifier: "loginSegue", sender: self)
-        
-            
         }
     }
     
