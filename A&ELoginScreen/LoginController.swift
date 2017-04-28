@@ -3,8 +3,8 @@
 //  A&ELoginScreen
 //
 //  Created by Yamnel Serra on 2/7/17.
-//  Copyright © 2017 Yamnel. All rights reserved.
-//  Edited by Tyler Hall
+//  Copyright © 2017. All rights reserved.
+//  Edited by Stephen Lomangino, James Hall and Yamnel Serra
 //
 
 import UIKit
@@ -52,7 +52,7 @@ class LoginController: UIViewController {
                         //Causes the controller to display on-screen with animation
                         self.present(loginFailureAlertController, animated: true, completion: nil)
                     }
-                    
+            //an uninterrupted transition from this screen to the login screen
             self.performSegue(withIdentifier: "loginSegue", sender: self)
         }
     }

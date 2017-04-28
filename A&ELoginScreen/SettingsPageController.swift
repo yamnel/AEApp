@@ -43,7 +43,7 @@ class SettingsPageController: UIViewController {
                 var ref: FIRDatabaseReference! = FIRDatabase.database().reference()
                 ref = FIRDatabase.database().reference()
                 
-                //update fields in the db
+                //update email field in the db
                 ref.child("users").child((self.user?.uid)!).updateChildValues(["email" : self.newEmailInput.text!])
                 
                 //Creates a UIAlertController which tell the user that the reset succeeded
@@ -53,23 +53,8 @@ class SettingsPageController: UIViewController {
                 //Specifies the text and behavior of the button attached to the UIAlertController
                 resetSuccessAlertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
                 
+                //send the ui back to the main menu
                 self.performSegue(withIdentifier: "backToMain", sender: self)
-                    //Checks to make sure that the user is signed in
-        //             FIRAuth.auth()?.addStateDidChangeListener { auth, user in
-        //                 if user != nil {
-        //                     // User is signed in, and is therefore
-        //                     // redirected to the main menu
-        //
-        //                    self.performSegue(withIdentifier: "backToMain", sender: self)
-        //                 } else {
-        //                     // No user is signed in, so the user is
-        //                   // Redirected to the login screen to do so
-        //
-        //               self.performSegue(withIdentifier: "backToLogin", sender: self)
-        //         }
-        //   }
-                
-              //  }))
 
                 //Causes the UIAlertController to pop up on screen
                 self.present(resetSuccessAlertController, animated: true, completion: nil) 
@@ -102,7 +87,7 @@ class SettingsPageController: UIViewController {
                 
             } else {
                 
-                //Creates a UIAlertController which tell the user that
+                //Creates a UIAlertController which tells the user that
                 //the attempt succeeded
                 let resetSuccessAlertController = UIAlertController(title: "Success!", message:
                     "A password reset message has been sent to your email address!", preferredStyle: UIAlertControllerStyle.alert)
