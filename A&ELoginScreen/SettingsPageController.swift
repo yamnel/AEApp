@@ -22,7 +22,7 @@ class SettingsPageController: UIViewController {
     @IBOutlet weak var newEmailInput: UITextField!
     
     @IBAction func setNewEmail(_ sender: Any) {
-        
+        //Native firebase to update authorization sector of db
         user?.updateEmail(newEmailInput.text!) { (error) in
             if error != nil {
                 //reset failed
@@ -37,7 +37,7 @@ class SettingsPageController: UIViewController {
                 var ref: FIRDatabaseReference! = FIRDatabase.database().reference()
                 ref = FIRDatabase.database().reference()
                 
-                //update fields
+                //update fields in the db
                 ref.child("users").child((self.user?.uid)!).updateChildValues(["email" : self.newEmailInput.text!])
                 
                 //Creates a UIAlertController which tell the user that the reset succeeded
@@ -63,7 +63,7 @@ class SettingsPageController: UIViewController {
         //               self.performSegue(withIdentifier: "backToLogin", sender: self)
         //         }
         //   }
-                    
+                
               //  }))
 
                 //Causes the UIAlertController to pop up on screen
