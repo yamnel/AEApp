@@ -69,6 +69,7 @@
 		72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */; };
 		72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */; };
 		72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */; };
+		F807D8481EB122F900FF493B /* UData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D8471EB122F900FF493B /* UData.swift */; };
 		F8181F3A1E8962D80043C3FB /* TiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F391E8962D80043C3FB /* TiresViewController.swift */; };
 		F8181F3C1E8967EA0043C3FB /* WheelAdjustmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */; };
 		F8181F3E1E896B000043C3FB /* BatteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3D1E896B000043C3FB /* BatteryViewController.swift */; };
@@ -181,6 +182,7 @@
 		72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		C07FCDA3F0ECF23117AEAF7C /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB280F5E1CC837D7E0C4A1BA /* Pods_A_ELoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_ELoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F807D8471EB122F900FF493B /* UData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UData.swift; sourceTree = "<group>"; };
 		F8181F391E8962D80043C3FB /* TiresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiresViewController.swift; sourceTree = "<group>"; };
 		F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelAdjustmentViewController.swift; sourceTree = "<group>"; };
 		F8181F3D1E896B000043C3FB /* BatteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryViewController.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				720A90C31E92B8F30043C82F /* PrintRenderer.swift */,
 				720A90C41E92B8F30043C82F /* InvoiceGenerator.swift */,
 				F81A996D1EAAB1CF0052CA1D /* Constants.swift */,
+				F807D8471EB122F900FF493B /* UData.swift */,
 			);
 			name = "Other Classes";
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				72D4291B1E7F9F8700EDFA59 /* BGDrivelineViewController.swift in Sources */,
 				72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */,
 				F8181F3C1E8967EA0043C3FB /* WheelAdjustmentViewController.swift in Sources */,
+				F807D8481EB122F900FF493B /* UData.swift in Sources */,
 				72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */,
 				720A90C71E92B8F30043C82F /* AddItemViewController.swift in Sources */,
 				72491D4A1E845746007A5988 /* BGFuelServiceViewController.swift in Sources */,

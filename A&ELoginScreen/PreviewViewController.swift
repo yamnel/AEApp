@@ -82,7 +82,7 @@ class PreviewViewController: UIViewController {
         super.viewWillAppear(animated)
         //TESTING\\
         
-        
+//        LoginController.currentUser.parseItems()
         
         //TESTING\\
         
@@ -150,7 +150,7 @@ class PreviewViewController: UIViewController {
         //TESTING\\
         
         
-        LoginController.currentUser.parseItems()
+//        LoginController.currentUser.parseItems()
         
         //TESTING\\
         invGenerator = InvoiceGenerator()

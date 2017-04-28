@@ -68,6 +68,8 @@ class UserInformation{
             } catch{
                 print("Could not write to file")
             }
+            
+            self.parsePaymentDates()
         }
         
     }
@@ -127,6 +129,8 @@ class UserInformation{
         
         let orderDateList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
         
+        self.listOfPaymentDates.removeAll(keepingCapacity: false)
+        
         for var dateInfo in orderDateList{
             self.listOfPaymentDates.append(dateInfo["PaymentDate"]! as! String)
         }
@@ -136,18 +140,22 @@ class UserInformation{
     
     func parseItems(){
         print("Parse ITEMS")
+        
+        
         var jsondict: Dictionary<String, AnyObject>!
         var jsonData: Data!
         do{
             let url = URL(fileURLWithPath: self.orderPartsInfoPath)
+            
             jsonData = try Data(contentsOf: url)
             jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
             print(jsondict)
         }catch{
-            
+            print("error parsing: Can't create JsonDict")
         }
         
         let orderpartsList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
+        
         
         ITEM_LIST.removeAll(keepingCapacity: false)
         

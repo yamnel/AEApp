@@ -134,44 +134,45 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         // TESTING \\
         
         
-        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
-        //        print(LoginController.currentUser.orderLaborInfoPath)
+//        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
+//        //        print(LoginController.currentUser.orderLaborInfoPath)
+//        
+//        LoginController.currentUser.getUserOrderLaborInfo { info in
+//            LoginController.currentUser.orderLaborInfoData = info
+//            
+//            print("The LaborInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
+//            
+//            let str = LoginController.currentUser.orderLaborInfoData.description
+//            //            print(str) // TESTING \\
+//            
+//            do{
+//                try str.write(toFile: LoginController.currentUser.orderLaborInfoPath, atomically: false, encoding: String.Encoding.utf8)
+//                
+//            } catch{
+//                print("Could not write to file")
+//            }
+//        }
         
-        LoginController.currentUser.getUserOrderLaborInfo { info in
-            LoginController.currentUser.orderLaborInfoData = info
-            
-            print("The LaborInfo is \(LoginController.currentUser.orderLaborInfoData)") //TESTING\\
-            
-            let str = LoginController.currentUser.orderLaborInfoData.description
-            //            print(str) // TESTING \\
-            
-            do{
-                try str.write(toFile: LoginController.currentUser.orderLaborInfoPath, atomically: false, encoding: String.Encoding.utf8)
-                
-            } catch{
-                print("Could not write to file")
-            }
-        }
-        
-        
+        var x = UData()
         
 //        LoginController.currentUser.orderPartsInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderPartsInfoFileName).json"
         
-        LoginController.currentUser.getUserOrderPartsInfo { info in
-            LoginController.currentUser.orderPartsInfoData = info
-            
-            print("The PartsInfo is \(LoginController.currentUser.orderPartsInfoData)") //TESTING\\
-            
-            let str = LoginController.currentUser.orderPartsInfoData.description
-            //            print(str) // TESTING \\
-            
-            do{
-                try str.write(toFile: LoginController.currentUser.orderPartsInfoPath, atomically: false, encoding: String.Encoding.utf8)
-                
-            } catch{
-                print("Could not write to file")
-            }
-        }
+//        LoginController.currentUser.getUserOrderPartsInfo { info in
+//            LoginController.currentUser.orderPartsInfoData = info
+//            
+//            print("The PartsInfo is \(LoginController.currentUser.orderPartsInfoData)") //TESTING\\
+//            
+//            let str = LoginController.currentUser.orderPartsInfoData.description
+//            //            print(str) // TESTING \\
+//            
+//            do{
+//                try str.write(toFile: LoginController.currentUser.orderPartsInfoPath, atomically: false, encoding: String.Encoding.utf8)
+//                print("\nwrote to Parts file\n")
+//            } catch{
+//                print("Could not write to file")
+//            }
+//            LoginController.currentUser.parseItems()
+//        }
         
         // TESTING \\
 
