@@ -22,16 +22,8 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     var firstAppeared = true
     
     var nextNumberAsString: String!
-    // TESTING \\
-    
     
     var invoiceDate: String!
-    
-    
-    
-    
-    
-    // TESTING \\
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +55,6 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     
@@ -108,7 +99,6 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.saveCompletionHandler = saveCompletionHandler
         originalViewController.navigationController?.pushViewController(self, animated: true)
     }
-    
     
     func determineInvoiceNumber() {
         // Get the invoice number from the user defaults if exists.
@@ -173,7 +163,6 @@ class CreatorViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (items != nil) ? items.count : 0
-//        return LoginController.currentUser.listOfPaymentDates.count
     }
     
     

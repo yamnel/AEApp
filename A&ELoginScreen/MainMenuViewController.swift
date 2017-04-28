@@ -14,7 +14,7 @@ import FirebaseAuth
 class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     
     
-    
+    //Creates a reference with which to connect to the Firebase DB
     let ref  : FIRDatabaseReference! = FIRDatabase.database().reference()
     
     // The following delegate method ensures that the View Controller conforms to
@@ -26,12 +26,17 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    /*
+     * Looks up the current user's first & last name
+     * and updates the nameLabel with those values
+     */
     func readName(){
         
+        //Sets a userID variable equal to the current user's ID
         let userID = FIRAuth.auth()?.currentUser?.uid
         
+        //Gets the current user's first and last name and updates the nameLabel with those values
         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
             
             let value = snapshot.value as? NSDictionary
             
@@ -47,7 +52,10 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
     }
     
     
-    // Logs the user out of the Firebase DB when the logOutButton is pressed
+    /*
+     * Logs the user out of the Firebase DB and
+     * Segues to the Login Screen when the logOutButton is pressed
+     */
     @IBAction func logOutButton(_ sender: Any) {
         
         do{
@@ -69,6 +77,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         // "Current Deals" Page set as the target url
         let safariVC = SFSafariViewController(url: NSURL(string: "http://aandeautorepair.com/current-deals")! as URL)
         
+        //Causes the safariVC to present on screen
         self.present(safariVC, animated: true, completion: nil)
         
         safariVC.delegate = self
@@ -79,15 +88,8 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         super.viewDidLoad()
         
         readName()
-        // Do any additional setup after loading the view.
-        
-        
-        //.................TESTING.................\\
 
-//        LoginController.currentUser.parsePaymentDates()
-        
-        //.................TESTING.................\\
-
+         LoginController.currentUser.parsePaymentDates()
     }
 
     override func didReceiveMemoryWarning() {

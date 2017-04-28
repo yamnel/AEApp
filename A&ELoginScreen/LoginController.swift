@@ -4,7 +4,7 @@
 //
 //  Created by Yamnel Serra on 2/7/17.
 //  Copyright © 2017 Yamnel. All rights reserved.
-//  Edited by Tyler Hall (A WHOLE Lot)
+//  Edited by Tyler Hall
 //
 
 import UIKit
@@ -16,7 +16,6 @@ extension UINavigationController {
         return false
     }
 }
-
 
 class LoginController: UIViewController {
     
@@ -54,32 +53,17 @@ class LoginController: UIViewController {
                         self.present(loginFailureAlertController, animated: true, completion: nil)
                     }
                     
-//            let credential = FIREmailPasswordAuthProvider.credential(withEmail: email, password: password)
-                    
             self.performSegue(withIdentifier: "loginSegue", sender: self)
-        
-            
         }
     }
-    
-    
-    //.................TESTING.................\\
+
     static var currentUser: UserInformation!
-    
-    
-    //.................TESTING.................\\
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //.................TESTING.................\\
+        //Creates an instance of the UserInformation class & stores into the current user
         LoginController.currentUser = UserInformation()
-        
-//        self.currentUser = UserInformation()
-//        self.currentUser.parsePaymentDates()
-//       print(currentUser.listOfPaymentDates)
-        
-        //.................TESTING.................\\
 
     }
 

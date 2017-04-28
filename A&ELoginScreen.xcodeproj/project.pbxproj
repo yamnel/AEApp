@@ -60,6 +60,7 @@
 		72E427B71E8939630035B3F9 /* InterstateBatteriesLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E427B61E8939630035B3F9 /* InterstateBatteriesLogo.png */; };
 		72F8A9401E8E7B9A00670A59 /* BGFuelService.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72F8A93F1E8E7B9A00670A59 /* BGFuelService.jpg */; };
 		72F8A9421E8E950500670A59 /* BGSteeringService.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F8A9411E8E950500670A59 /* BGSteeringService.png */; };
+		72FABD471EAEAB68008C3CC3 /* exhaust-icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FABD461EAEAB68008C3CC3 /* exhaust-icon copy.png */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
 		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
@@ -170,6 +171,7 @@
 		72E427B61E8939630035B3F9 /* InterstateBatteriesLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InterstateBatteriesLogo.png; sourceTree = "<group>"; };
 		72F8A93F1E8E7B9A00670A59 /* BGFuelService.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGFuelService.jpg; sourceTree = "<group>"; };
 		72F8A9411E8E950500670A59 /* BGSteeringService.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BGSteeringService.png; sourceTree = "<group>"; };
+		72FABD461EAEAB68008C3CC3 /* exhaust-icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "exhaust-icon copy.png"; path = "Img/exhaust-icon copy.png"; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
@@ -268,7 +270,7 @@
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				F8F63E681EAEDA3F00B5080A /* exhaust-icon copy.png */,
+				72FABD461EAEAB68008C3CC3 /* exhaust-icon copy.png */,
 				72222C4E1EAA6B5B0091EE4F /* CarCareOneLogo.png */,
 				7265434B1EA675A300AF5092 /* Exhaust-Image.jpg */,
 				72C249B71E9D79940067A3A8 /* DiamondPlateBackground.jpg */,
@@ -519,7 +521,7 @@
 				72222C4F1EAA6B5B0091EE4F /* CarCareOneLogo.png in Resources */,
 				72463EA41E7DCFDB00F355A9 /* Diagnostics Icon Update.png in Resources */,
 				72463EA31E7DCFDB00F355A9 /* AC Icon Update.png in Resources */,
-				F8F63E691EAEDA3F00B5080A /* exhaust-icon copy.png in Resources */,
+				72FABD471EAEAB68008C3CC3 /* exhaust-icon copy.png in Resources */,
 				72463EAA1E7DD1D500F355A9 /* AC Repair.jpg in Resources */,
 				72463EA51E7DCFDB00F355A9 /* Tires Icon Update.png in Resources */,
 				7220DADA1E73262A00AAF7DE /* mail-icon.png in Resources */,

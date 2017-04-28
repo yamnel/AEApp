@@ -54,9 +54,6 @@ class UserInformation{
         
         // get all the order dates
         self.paymentDatesInfoPath =  "\(AppDelegate.getAppDelegate().getDocDir())/user_payment_info.json"
-        print(self.paymentDatesInfoPath)
-        print(" ")
-        print(" ")
         self.getUserOrderDateInfo{ info in
             self.paymentDatesInfoData = info
             print("The paymentInfo is \(self.paymentDatesInfoData)") //TESTING\\
@@ -65,6 +62,7 @@ class UserInformation{
             print(str) // TESTING \\
             do{
                 try str.write(toFile: self.paymentDatesInfoPath, atomically: false, encoding: String.Encoding.utf8)
+                print(self.paymentDatesInfoPath)
             } catch{
                 print("Could not write to file")
             }
@@ -121,14 +119,15 @@ class UserInformation{
             jsonData = try Data(contentsOf: url)
             jsondict = try JSONSerialization.jsonObject(with: jsonData) as! Dictionary<String, AnyObject>
             
-        }catch{
-            
-        }
+        
         
         let orderDateList: Array<Dictionary<String, AnyObject>> = jsondict["resource"] as! Array<Dictionary<String, AnyObject>>
-        
+       
         for var dateInfo in orderDateList{
             self.listOfPaymentDates.append(dateInfo["PaymentDate"]! as! String)
+        }
+        }catch{
+            print("Did not work??")
         }
         
     }
