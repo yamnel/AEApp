@@ -3,7 +3,8 @@
 //  A&ELoginScreen
 //
 //  Created by James Hall on 2/21/17.
-//  Copyright © 2017 Yamnel. All rights reserved.
+//  Copyright © 2017. All rights reserved.
+//  Edited by Stephen Lomangino, James Hall and Yamnel Serra
 //
 
 import UIKit
@@ -40,7 +41,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
         stateField = pickerDataSource[row]
     }
 
-    
+    //Returns the total number of components (not rows) in the picker view
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
 
         return 1
@@ -58,6 +59,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBAction func registerAction(_ sender: UIButton) {
         
         //Guard statement checks to ensure that optional fields have values present
+        //And then updates their respective labels with their stored values if they are
         guard let customerNumber = customerNumberField.text, let email = emailField.text, let password = passwordField.text, let reEnterPassword = reEnterPasswordField.text, let firstName = firstNameField.text, let lastName = lastNameField.text, let streetAddress = streetAddressField.text, let city = cityField.text, let zipCode = zipCodeField.text
 
                 else {
@@ -65,7 +67,8 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
                     return
                 }
 
-        //If the two password input fields are equal, and the Terms & Conditions agreement switch is ON
+        //If the two password input fields are equal, 
+        //and the Terms & Conditions agreement switch is ON
         if ((reEnterPassword == password) && (agreeSwitch.isOn)) {
 
         //Attempts to create a new user in the DB with values stored from user input
@@ -114,7 +117,6 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
 
                     return
                 }
-
             })
         })
 
@@ -153,8 +155,6 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
             self.pickerView.dataSource = self;
             self.pickerView.delegate = self;
 
-
-            // Do any additional setup after loading the view.
         }
 
         override func didReceiveMemoryWarning() {
@@ -165,7 +165,6 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     
             self.view.endEditing(true)
-//            super.touchesBegan(touches, with: event)
         }
 
         // Cancel Landscape Orientation

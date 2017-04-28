@@ -20,11 +20,8 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         tblInvoices.delegate = self
         tblInvoices.dataSource = self
         
-        // TESTING \\
         LoginController.currentUser.parsePaymentDates()
         print(LoginController.currentUser.listOfPaymentDates)
-        
-        // TESTING \\
     }
 
     
@@ -52,7 +49,6 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
         if let identifier = segue.identifier {
             if identifier == "idSeguePresentPreview" {
                 let previewViewController = segue.destination as! PreviewViewController
-//                previewViewController.invoiceInfo["items"] = ITEM_LIST as? AnyObject
             }
         }
     }
@@ -69,8 +65,11 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBAction func createInvoice(_ sender: AnyObject) {
         let creatorViewController = storyboard?.instantiateViewController(withIdentifier: "idCreateInvoice") as! CreatorViewController
+        
         creatorViewController.presentCreatorViewControllerInViewController(self) { (invoiceNumber, recipientInfo, totalAmount, items) in
-            DispatchQueue.main.async(execute: { 
+        
+            DispatchQueue.main.async(execute: {
+                
                 if self.invoices == nil {
                     self.invoices = [[String: AnyObject]]()
                 }
@@ -128,11 +127,8 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         SELECTED_PAYMENT_DATE = LoginController.currentUser.listOfPaymentDates[indexPath.row]
-        //print(SELECTED_PAYMENT_DATE)
-        
-        // TESTING \\
-        
         
 //        LoginController.currentUser.orderLaborInfoPath = "\(AppDelegate.getAppDelegate().getDocDir())/\(LoginController.currentUser.orderLaborInfoFileName).json"
 //        //        print(LoginController.currentUser.orderLaborInfoPath)
@@ -172,14 +168,6 @@ class InvoiceListViewController: UIViewController, UITableViewDelegate, UITableV
 //                print("Could not write to file")
 //            }
 //            LoginController.currentUser.parseItems()
-//        }
-        
-        // TESTING \\
-
-//        do{
-////            try LoginController.currentUser.parseItems()
-//        }catch{
-//            print("NOPE!")
 //        }
         
         selectedInvoiceIndex = (indexPath as NSIndexPath).row

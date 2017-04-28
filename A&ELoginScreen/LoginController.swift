@@ -3,8 +3,8 @@
 //  A&ELoginScreen
 //
 //  Created by Yamnel Serra on 2/7/17.
-//  Copyright © 2017 Yamnel. All rights reserved.
-//  Edited by Tyler Hall (A WHOLE Lot)
+//  Copyright © 2017. All rights reserved.
+//  Edited by Stephen Lomangino, James Hall and Yamnel Serra
 //
 
 import UIKit
@@ -16,7 +16,6 @@ extension UINavigationController {
         return false
     }
 }
-
 
 class LoginController: UIViewController {
     
@@ -53,33 +52,18 @@ class LoginController: UIViewController {
                         //Causes the controller to display on-screen with animation
                         self.present(loginFailureAlertController, animated: true, completion: nil)
                     }
-                    
-//            let credential = FIREmailPasswordAuthProvider.credential(withEmail: email, password: password)
-                    
+            //an uninterrupted transition from this screen to the login screen
             self.performSegue(withIdentifier: "loginSegue", sender: self)
-        
-            
         }
     }
-    
-    
-    //.................TESTING.................\\
+
     static var currentUser: UserInformation!
-    
-    
-    //.................TESTING.................\\
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //.................TESTING.................\\
+        //Creates an instance of the UserInformation class & stores into the current user
         LoginController.currentUser = UserInformation()
-        
-//        self.currentUser = UserInformation()
-//        self.currentUser.parsePaymentDates()
-//       print(currentUser.listOfPaymentDates)
-        
-        //.................TESTING.................\\
 
     }
 

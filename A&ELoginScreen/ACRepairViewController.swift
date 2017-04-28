@@ -3,7 +3,7 @@
 //  A&ELoginScreen
 //
 //  Created by James Hall on 3/18/17.
-//  Copyright © 2017 Yamnel. All rights reserved.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
