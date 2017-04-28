@@ -116,7 +116,6 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
 
                     return
                 }
-
             })
         })
 
