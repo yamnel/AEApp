@@ -13,7 +13,6 @@ import FirebaseAuth
 
 class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var customerNumberField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var reEnterPasswordField: UITextField!
@@ -23,7 +22,6 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var cityField: UITextField!
     @IBOutlet var pickerView: UIPickerView!
     var stateField = String()
-    @IBOutlet weak var agreeSwitch: UISwitch!
     @IBOutlet weak var zipCodeField: UITextField!
 
     //String array holding all 50 states to be used as data source for pickerView
@@ -60,7 +58,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         //Guard statement checks to ensure that optional fields have values present
         //And then updates their respective labels with their stored values if they are
-        guard let customerNumber = customerNumberField.text, let email = emailField.text, let password = passwordField.text, let reEnterPassword = reEnterPasswordField.text, let firstName = firstNameField.text, let lastName = lastNameField.text, let streetAddress = streetAddressField.text, let city = cityField.text, let zipCode = zipCodeField.text
+        guard let email = emailField.text, let password = passwordField.text, let reEnterPassword = reEnterPasswordField.text, let firstName = firstNameField.text, let lastName = lastNameField.text, let streetAddress = streetAddressField.text, let city = cityField.text, let zipCode = zipCodeField.text
 
                 else {
 
@@ -69,7 +67,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
 
         //If the two password input fields are equal, 
         //and the Terms & Conditions agreement switch is ON
-        if ((reEnterPassword == password) && (agreeSwitch.isOn)) {
+        if ((reEnterPassword == password)) {
 
         //Attempts to create a new user in the DB with values stored from user input
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (FIRUser, error) in
@@ -104,7 +102,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
             let userReference = ref.child("users")
 
             //values dictionary holds values to be updated into referenced database
-            let values = ["id": customerNumber, "email": email, "firstName": firstName,
+            let values = ["email": email, "firstName": firstName,
                 "lastName": lastName, "streetAddress": streetAddress, "city": city, "state": self.stateField, "zipCode": zipCode]
 
             //Adds an additional child which is set as the user's unique user id, and then updates
@@ -135,19 +133,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
             //Causes the controller to display on-screen with animation
             self.present(passwordAlertController, animated: true, completion: nil)
 
-        } else if !(agreeSwitch.isOn) { //If the agree switch has not been set to ON
-
-            //Creates a UIAlertController which will display the error
-            let agreeAlertController = UIAlertController(title: "Terms & Conditions", message:
-            "You must agree to the Terms & Conditions in order to create an account!", preferredStyle: UIAlertControllerStyle.alert)
-            
-            //Specifies the text and behavior of the button attached to the UIAlertController
-            agreeAlertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-
-            //Causes the controller to display on-screen with animation
-            self.present(agreeAlertController, animated: true, completion: nil)
-            
-            }
+        }
         }
 
         override func viewDidLoad() {

@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     var window: UIWindow?
     
-    let currencyCode = "USD"
+//    let currencyCode = "USD"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -109,15 +109,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     
-    func getStringValueFormattedAsCurrency(_ value: String) -> String {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = NumberFormatter.Style.currency
-        numberFormatter.currencyCode = currencyCode
-        numberFormatter.maximumFractionDigits = 2
-        
-        let formattedValue = numberFormatter.string(from: NumberFormatter().number(from: value)!)
-        return formattedValue!
-    }
+//    func getStringValueFormattedAsCurrency(_ value: String) -> String {
+//        let numberFormatter = NumberFormatter()
+//        numberFormatter.numberStyle = NumberFormatter.Style.currency
+//        numberFormatter.currencyCode = currencyCode
+//        numberFormatter.maximumFractionDigits = 2
+//        
+//        let formattedValue = numberFormatter.string(from: NumberFormatter().number(from: value)!)
+//        return formattedValue!
+//    }
     
     
     func getDocDir() -> String {

@@ -57,13 +57,13 @@ class LoginController: UIViewController {
         }
     }
 
-    static var currentUser: UserInformation!
+//    static var currentUser: UserInformation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Creates an instance of the UserInformation class & stores into the current user
-        LoginController.currentUser = UserInformation()
+//        LoginController.currentUser = UserInformation()
 
     }
 

@@ -8,15 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		56916683300A85CA1C476C49 /* Pods_A_ELoginScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB280F5E1CC837D7E0C4A1BA /* Pods_A_ELoginScreen.framework */; };
-		720A90C71E92B8F30043C82F /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90C11E92B8F30043C82F /* AddItemViewController.swift */; };
-		720A90C81E92B8F30043C82F /* CreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90C21E92B8F30043C82F /* CreatorViewController.swift */; };
-		720A90C91E92B8F30043C82F /* PrintRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90C31E92B8F30043C82F /* PrintRenderer.swift */; };
-		720A90CA1E92B8F30043C82F /* InvoiceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90C41E92B8F30043C82F /* InvoiceGenerator.swift */; };
-		720A90CB1E92B8F30043C82F /* InvoiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90C51E92B8F30043C82F /* InvoiceListViewController.swift */; };
-		720A90CC1E92B8F30043C82F /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90C61E92B8F30043C82F /* PreviewViewController.swift */; };
-		720A90D21E92BB390043C82F /* invoice.html in Resources */ = {isa = PBXBuildFile; fileRef = 720A90CF1E92BB390043C82F /* invoice.html */; };
-		720A90D31E92BB390043C82F /* last_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 720A90D01E92BB390043C82F /* last_item.html */; };
-		720A90D41E92BB390043C82F /* single_item.html in Resources */ = {isa = PBXBuildFile; fileRef = 720A90D11E92BB390043C82F /* single_item.html */; };
 		720A90D61E92EAAE0043C82F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720A90D51E92EAAE0043C82F /* LaunchScreenViewController.swift */; };
 		7210F0EE1E9C342100252EB4 /* TireBrands.png in Resources */ = {isa = PBXBuildFile; fileRef = 7210F0ED1E9C342100252EB4 /* TireBrands.png */; };
 		7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */; };
@@ -62,22 +53,17 @@
 		72F8A9421E8E950500670A59 /* BGSteeringService.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F8A9411E8E950500670A59 /* BGSteeringService.png */; };
 		72FABD471EAEAB68008C3CC3 /* exhaust-icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FABD461EAEAB68008C3CC3 /* exhaust-icon copy.png */; };
 		72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */; };
-		72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */; };
 		72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */; };
 		72FC8B701E8E983000BEAD17 /* BGTransmissionService.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72FC8B6F1E8E983000BEAD17 /* BGTransmissionService.jpg */; };
 		72FC8B721E8EA16000BEAD17 /* BGDrivelineService.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72FC8B711E8EA16000BEAD17 /* BGDrivelineService.jpg */; };
 		72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FDE0C11E5C9CA900D888CF /* 2016 A&E Stroke Logo.png */; };
 		72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */; };
 		72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */; };
-		72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */; };
-		F807D8481EB122F900FF493B /* UData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D8471EB122F900FF493B /* UData.swift */; };
 		F8181F3A1E8962D80043C3FB /* TiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F391E8962D80043C3FB /* TiresViewController.swift */; };
 		F8181F3C1E8967EA0043C3FB /* WheelAdjustmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */; };
 		F8181F3E1E896B000043C3FB /* BatteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3D1E896B000043C3FB /* BatteryViewController.swift */; };
 		F8181F401E896B9E0043C3FB /* DiagnosticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F3F1E896B9E0043C3FB /* DiagnosticsViewController.swift */; };
 		F8181F421E896C280043C3FB /* ExhaustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8181F411E896C280043C3FB /* ExhaustViewController.swift */; };
-		F81A996E1EAAB1CF0052CA1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A996D1EAAB1CF0052CA1D /* Constants.swift */; };
-		F81A99701EAAB2FA0052CA1D /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */; };
 		F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */; };
 		F87E8AE41E7B0433008554FA /* A&ELoginScreen.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */; };
 		F87E8AE61E7B0443008554FA /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = F87E8AE51E7B0443008554FA /* Pods */; };
@@ -86,7 +72,6 @@
 		F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DD994F1E4A564800DC3EB9 /* Main.storyboard */; };
 		F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DD99521E4A564800DC3EB9 /* Assets.xcassets */; };
 		F8DD99561E4A564800DC3EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */; };
-		F8F63E691EAEDA3F00B5080A /* exhaust-icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F63E681EAEDA3F00B5080A /* exhaust-icon copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,15 +103,6 @@
 		3B4E35B56A2FE9FC72F7F72C /* Pods-A&ELoginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A&ELoginScreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-A&ELoginScreen/Pods-A&ELoginScreen.release.xcconfig"; sourceTree = "<group>"; };
 		5AD17F9F88D2B757714DB8DF /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		71BFC3433D674687C82AF2C6 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		720A90C11E92B8F30043C82F /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
-		720A90C21E92B8F30043C82F /* CreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatorViewController.swift; sourceTree = "<group>"; };
-		720A90C31E92B8F30043C82F /* PrintRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintRenderer.swift; sourceTree = "<group>"; };
-		720A90C41E92B8F30043C82F /* InvoiceGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceGenerator.swift; sourceTree = "<group>"; };
-		720A90C51E92B8F30043C82F /* InvoiceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceListViewController.swift; sourceTree = "<group>"; };
-		720A90C61E92B8F30043C82F /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-		720A90CF1E92BB390043C82F /* invoice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = invoice.html; path = "HTML Templates/invoice.html"; sourceTree = "<group>"; };
-		720A90D01E92BB390043C82F /* last_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = last_item.html; path = "HTML Templates/last_item.html"; sourceTree = "<group>"; };
-		720A90D11E92BB390043C82F /* single_item.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = single_item.html; path = "HTML Templates/single_item.html"; sourceTree = "<group>"; };
 		720A90D51E92EAAE0043C82F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		7210F0ED1E9C342100252EB4 /* TireBrands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TireBrands.png; path = Img/TireBrands.png; sourceTree = "<group>"; };
 		7220DACF1E731C0700AAF7DE /* facebook-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-app-icon.png"; sourceTree = "<group>"; };
@@ -174,24 +150,19 @@
 		72F8A9411E8E950500670A59 /* BGSteeringService.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BGSteeringService.png; sourceTree = "<group>"; };
 		72FABD461EAEAB68008C3CC3 /* exhaust-icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "exhaust-icon copy.png"; path = "Img/exhaust-icon copy.png"; sourceTree = "<group>"; };
 		72FAC1241E7305BA0042E31E /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
-		72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInvoicesViewController.swift; sourceTree = "<group>"; };
 		72FAC1281E730EBF0042E31E /* big-phone-red-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big-phone-red-hi.png"; path = "Assets.xcassets/A&E.imageset/big-phone-red-hi.png"; sourceTree = "<group>"; };
 		72FC8B6F1E8E983000BEAD17 /* BGTransmissionService.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGTransmissionService.jpg; sourceTree = "<group>"; };
 		72FC8B711E8EA16000BEAD17 /* BGDrivelineService.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGDrivelineService.jpg; sourceTree = "<group>"; };
 		72FDE0C11E5C9CA900D888CF /* 2016 A&E Stroke Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2016 A&E Stroke Logo.png"; path = "../2016 A&E Stroke Logo.png"; sourceTree = "<group>"; };
 		72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		C07FCDA3F0ECF23117AEAF7C /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB280F5E1CC837D7E0C4A1BA /* Pods_A_ELoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_ELoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F807D8471EB122F900FF493B /* UData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UData.swift; sourceTree = "<group>"; };
 		F8181F391E8962D80043C3FB /* TiresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiresViewController.swift; sourceTree = "<group>"; };
 		F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelAdjustmentViewController.swift; sourceTree = "<group>"; };
 		F8181F3D1E896B000043C3FB /* BatteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryViewController.swift; sourceTree = "<group>"; };
 		F8181F3F1E896B9E0043C3FB /* DiagnosticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticsViewController.swift; sourceTree = "<group>"; };
 		F8181F411E896C280043C3FB /* ExhaustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhaustViewController.swift; sourceTree = "<group>"; };
-		F81A996D1EAAB1CF0052CA1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPageController.swift; sourceTree = "<group>"; };
 		F87E8AE31E7B0433008554FA /* A&ELoginScreen.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "A&ELoginScreen.xcworkspace"; sourceTree = "<group>"; };
 		F87E8AE51E7B0443008554FA /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
@@ -202,7 +173,6 @@
 		F8DD99521E4A564800DC3EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8DD99551E4A564800DC3EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8DD99571E4A564800DC3EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8F63E681EAEDA3F00B5080A /* exhaust-icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exhaust-icon copy.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,20 +223,9 @@
 				72FDE0C71E5CCB2900D888CF /* MainMenuViewController.swift */,
 				72FDE0C51E5CB7A700D888CF /* RegisterScreenViewController.swift */,
 				F868CD6B1E730D8500B78DE3 /* SettingsPageController.swift */,
-				F8B19E9A1EAD0A8900C18EC3 /* Invoice Management Controllers */,
 				F8B19E981EAD099700C18EC3 /* Information Controllers */,
 			);
 			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		720A90CE1E92BAEE0043C82F /* HTML Templates */ = {
-			isa = PBXGroup;
-			children = (
-				720A90CF1E92BB390043C82F /* invoice.html */,
-				720A90D01E92BB390043C82F /* last_item.html */,
-				720A90D11E92BB390043C82F /* single_item.html */,
-			);
-			name = "HTML Templates";
 			sourceTree = "<group>";
 		};
 		72463E9E1E7DC89A00F355A9 /* Images */ = {
@@ -309,18 +268,6 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		728D91011E952E1F00C45C8B /* Other Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F81A996F1EAAB2FA0052CA1D /* UserInformation.swift */,
-				720A90C31E92B8F30043C82F /* PrintRenderer.swift */,
-				720A90C41E92B8F30043C82F /* InvoiceGenerator.swift */,
-				F81A996D1EAAB1CF0052CA1D /* Constants.swift */,
-				F807D8471EB122F900FF493B /* UData.swift */,
-			);
-			name = "Other Classes";
-			sourceTree = "<group>";
-		};
 		728D91531E8C959200B584AF /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,23 +296,10 @@
 				720A90D51E92EAAE0043C82F /* LaunchScreenViewController.swift */,
 				72463E8F1E7DC34F00F355A9 /* ServicesViewController.swift */,
 				F8181F391E8962D80043C3FB /* TiresViewController.swift */,
-				72FDE0C91E5CD2DE00D888CF /* TermsAndConditionsViewController.swift */,
-				72FAC1261E73076E0042E31E /* ViewInvoicesViewController.swift */,
 				F8181F3B1E8967EA0043C3FB /* WheelAdjustmentViewController.swift */,
 				72D90EBA1EAAABD5006EDCD1 /* InterestFreeViewController.swift */,
 			);
 			name = "Information Controllers";
-			sourceTree = "<group>";
-		};
-		F8B19E9A1EAD0A8900C18EC3 /* Invoice Management Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				720A90C11E92B8F30043C82F /* AddItemViewController.swift */,
-				720A90C21E92B8F30043C82F /* CreatorViewController.swift */,
-				720A90C51E92B8F30043C82F /* InvoiceListViewController.swift */,
-				720A90C61E92B8F30043C82F /* PreviewViewController.swift */,
-			);
-			name = "Invoice Management Controllers";
 			sourceTree = "<group>";
 		};
 		F8DD993F1E4A564800DC3EB9 = {
@@ -392,10 +326,8 @@
 		F8DD994A1E4A564800DC3EB9 /* A&ELoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				720A90CE1E92BAEE0043C82F /* HTML Templates */,
 				F8DD994B1E4A564800DC3EB9 /* AppDelegate.swift */,
 				720A90CD1E92B9070043C82F /* View Controllers */,
-				728D91011E952E1F00C45C8B /* Other Classes */,
 				F8DD994F1E4A564800DC3EB9 /* Main.storyboard */,
 				F8DD99541E4A564800DC3EB9 /* LaunchScreen.storyboard */,
 				F8DD99521E4A564800DC3EB9 /* Assets.xcassets */,
@@ -535,7 +467,6 @@
 				723735911E8193EF00F4ADE8 /* GoogleService-Info.plist in Resources */,
 				726215191E86F07100BF3E4C /* BG-Cooling-System-Service21.jpg in Resources */,
 				72FDE0C21E5C9CA900D888CF /* 2016 A&E Stroke Logo.png in Resources */,
-				720A90D31E92BB390043C82F /* last_item.html in Resources */,
 				7220DAD81E73258000AAF7DE /* Attachment-4.png in Resources */,
 				726A74641E7DE43300F06C16 /* BrakesSvc-Icon150-150x150.png in Resources */,
 				726A746D1E7DE44A00F06C16 /* SteeringSvc-Icon150-150x150.png in Resources */,
@@ -547,7 +478,6 @@
 				72463EA61E7DCFDB00F355A9 /* Wheel Alignment.png in Resources */,
 				7265434C1EA675A300AF5092 /* Exhaust-Image.jpg in Resources */,
 				F8DD99531E4A564800DC3EB9 /* Assets.xcassets in Resources */,
-				720A90D41E92BB390043C82F /* single_item.html in Resources */,
 				7210F0EE1E9C342100252EB4 /* TireBrands.png in Resources */,
 				72C249B81E9D79940067A3A8 /* DiamondPlateBackground.jpg in Resources */,
 				72FAC1291E730EBF0042E31E /* big-phone-red-hi.png in Resources */,
@@ -555,7 +485,6 @@
 				726A746C1E7DE44A00F06C16 /* FuelSvc-Icon150-150x150.png in Resources */,
 				726A746A1E7DE44A00F06C16 /* CoolingSvc-Icon150-150x150.png in Resources */,
 				F87E8AE41E7B0433008554FA /* A&ELoginScreen.xcworkspace in Resources */,
-				720A90D21E92BB390043C82F /* invoice.html in Resources */,
 				7220DAD01E731C0700AAF7DE /* facebook-app-icon.png in Resources */,
 				72FC8B701E8E983000BEAD17 /* BGTransmissionService.jpg in Resources */,
 				F8DD99511E4A564800DC3EB9 /* Main.storyboard in Resources */,
@@ -659,32 +588,21 @@
 				72D4291B1E7F9F8700EDFA59 /* BGDrivelineViewController.swift in Sources */,
 				72FDE0C81E5CCB2900D888CF /* MainMenuViewController.swift in Sources */,
 				F8181F3C1E8967EA0043C3FB /* WheelAdjustmentViewController.swift in Sources */,
-				F807D8481EB122F900FF493B /* UData.swift in Sources */,
 				72FDE0C61E5CB7A700D888CF /* RegisterScreenViewController.swift in Sources */,
-				720A90C71E92B8F30043C82F /* AddItemViewController.swift in Sources */,
 				72491D4A1E845746007A5988 /* BGFuelServiceViewController.swift in Sources */,
 				F8DD994E1E4A564800DC3EB9 /* LoginController.swift in Sources */,
 				F868CD6C1E730D8500B78DE3 /* SettingsPageController.swift in Sources */,
-				F81A996E1EAAB1CF0052CA1D /* Constants.swift in Sources */,
-				720A90CA1E92B8F30043C82F /* InvoiceGenerator.swift in Sources */,
 				72E427B31E8933CF0035B3F9 /* BGTransViewController.swift in Sources */,
-				72FDE0CA1E5CD2DE00D888CF /* TermsAndConditionsViewController.swift in Sources */,
 				72E427B51E89341E0035B3F9 /* BGSteeringViewController.swift in Sources */,
 				726A745C1E7DE0A800F06C16 /* BGFluidsViewController.swift in Sources */,
 				720A90D61E92EAAE0043C82F /* LaunchScreenViewController.swift in Sources */,
-				720A90C91E92B8F30043C82F /* PrintRenderer.swift in Sources */,
-				720A90C81E92B8F30043C82F /* CreatorViewController.swift in Sources */,
 				72D429191E7F9E8900EDFA59 /* BGCoolingViewController.swift in Sources */,
 				72D90EBB1EAAABD5006EDCD1 /* InterestFreeViewController.swift in Sources */,
-				72FAC1271E73076E0042E31E /* ViewInvoicesViewController.swift in Sources */,
-				F81A99701EAAB2FA0052CA1D /* UserInformation.swift in Sources */,
 				F8181F401E896B9E0043C3FB /* DiagnosticsViewController.swift in Sources */,
 				F8181F421E896C280043C3FB /* ExhaustViewController.swift in Sources */,
 				726A74701E7DF30E00F06C16 /* BGBrakeViewController.swift in Sources */,
 				F8181F3A1E8962D80043C3FB /* TiresViewController.swift in Sources */,
 				72463E901E7DC34F00F355A9 /* ServicesViewController.swift in Sources */,
-				720A90CC1E92B8F30043C82F /* PreviewViewController.swift in Sources */,
-				720A90CB1E92B8F30043C82F /* InvoiceListViewController.swift in Sources */,
 				F8DD994C1E4A564800DC3EB9 /* AppDelegate.swift in Sources */,
 				72FAC1251E7305BA0042E31E /* ContactUsViewController.swift in Sources */,
 				726A745A1E7DD68100F06C16 /* ACRepairViewController.swift in Sources */,

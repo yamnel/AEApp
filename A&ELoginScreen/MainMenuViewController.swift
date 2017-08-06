@@ -90,7 +90,7 @@ class MainMenuViewController: UIViewController, SFSafariViewControllerDelegate {
         
         readName()
 
-         LoginController.currentUser.parsePaymentDates()
+//         LoginController.currentUser.parsePaymentDates()
     }
 
     override func didReceiveMemoryWarning() {
