@@ -24,6 +24,7 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
     var stateField = String()
     @IBOutlet weak var zipCodeField: UITextField!
 
+    
     //String array holding all 50 states to be used as data source for pickerView
     var pickerDataSource = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware ", "Florida ", "Georgia ", "Hawaii ", "Idaho ", "Illinois ", "Indiana ", "Iowa ", "Kansas ", "Kentucky ", "Louisiana ", "Maine ", "Maryland ", "Massachusetts ", "Michigan ", "Minnesota ", "Mississippi ", "Missouri ", "Montana ", "Nebraska ", "Nevada ", "New Hampshire ", "New Jersey ", "New Mexico ", "New York ", "North Carolina ", "North Dakota ", "Ohio ", "Oklahoma ", "Oregon ", "Pennsylvania ", "Rhode Island ", "South Carolina ", "South Dakota ", "Tennessee ", "Texas ", "Utah ", "Vermont ", "Virginia ", "Washington ", "West Virginia ", "Wisconsin ", "Wyoming"]
 
@@ -56,12 +57,55 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
     //IB action to be perfomed when the user presses the "Register" button
     @IBAction func registerAction(_ sender: UIButton) {
         
+        let fields = ["Email":emailField.text,"Password":passwordField.text, "Re-Enter Password":reEnterPasswordField.text, "First Name":firstNameField.text, "Last Name":lastNameField.text, "Street Address":streetAddressField.text, "City":cityField.text, "Zip Code":zipCodeField.text]
+        
+        var emptyFields = [String]()
+        
+        for (name,value) in fields{
+            
+            if (value == ""){
+            
+                emptyFields.append(name)
+            
+            }
+        }
+        
+        if(emptyFields.count != 0){
+                
+            if(emptyFields.count > 0){
+                    
+                var eFieldList: String?
+                    
+                for element in emptyFields {
+                    
+                    if eFieldList == nil {
+                        
+                        eFieldList = element
+                    } else {
+                        
+                        eFieldList = eFieldList! + ", " + element
+                    }
+                }
+                    
+                //Creates a UIAlertController which will display the error caught
+                let blankFieldAlertController = UIAlertController(title: "Blank Fields!", message: "The following fields have been left blank: \n\n \(eFieldList!)", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                //Specifies the text and behavior of the button attached to the UIAlertController
+                blankFieldAlertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.default,handler: nil))
+                    
+                //Causes the controller to display on-screen with animation
+                self.present(blankFieldAlertController, animated: true, completion: nil)
+                    
+                return
+            }
+        }
+        
         //Guard statement checks to ensure that optional fields have values present
         //And then updates their respective labels with their stored values if they are
         guard let email = emailField.text, let password = passwordField.text, let reEnterPassword = reEnterPasswordField.text, let firstName = firstNameField.text, let lastName = lastNameField.text, let streetAddress = streetAddressField.text, let city = cityField.text, let zipCode = zipCodeField.text
 
                 else {
-
+                    
                     return
                 }
 
@@ -134,7 +178,8 @@ class RegisterScreenViewController: UIViewController, UIPickerViewDelegate, UIPi
             self.present(passwordAlertController, animated: true, completion: nil)
 
         }
-        }
+//        }
+    }
 
         override func viewDidLoad() {
             super.viewDidLoad()
